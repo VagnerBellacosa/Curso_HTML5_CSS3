@@ -1,0 +1,60 @@
+    /*  parametro original */
+
+p {
+    color: red;
+}
+
+
+/*  overhide da classe */
+
+p {
+    color: red;
+    width: 500px;
+    border: 1px solid black;
+}
+
+
+/*  novas tag  */
+
+p,
+li,
+h1 {
+    color: red;
+}
+
+html {
+    /* px significa "pixels": o tamanho da fonte base é agora de 10 pixels */
+    font-size: 10px;
+    /* este deve ser o nome da fonte que você obteve no Google Fonts */
+    font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+p,
+li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+html {
+    background-color: #00539F;
+    body {
+        width: 600px;
+        margin: 0 auto;
+        background-color: #FF9500;
+        padding: 0 20px 20px 20px;
+        border: 5px solid black;
+        margin: 0;
+        padding: 20px 0;
+        color: #00539F;
+        text-shadow: 3px 3px 1px black;
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+    }

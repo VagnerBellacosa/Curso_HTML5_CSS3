@@ -1,0 +1,96 @@
+body {
+    background: rgb(255, 255, 255);
+    font-family: Verdana;
+    max-width: 900px;
+    margin: auto;
+}
+
+.photo {
+    border-radius: 100px;
+    margin-top: 15px;
+    border: 1px solid #505050;
+    width: 20%;
+}
+
+.imgGitHub {
+    border-radius: 100px;
+    margin-top: 15px;
+    margin-right: 5px;
+    border: 1px solid #505050;
+    width: 12%;
+}
+
+.imgGmail {
+    border-radius: 100px;
+    margin-top: 15px;
+    margin-right: 5px;
+    border: 1px solid #505050;
+    width: 12%;
+}
+
+.imgLinkedIn {
+    border-radius: 100px;
+    margin-top: 15px;
+    margin-right: 5px;
+    border: 1px solid #505050;
+    width: 10%;
+}
+
+#title,
+.subtitle,
+.post_title {
+    color: #505050;
+}
+
+#title {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.post_title {
+    font-size: 16px;
+    font-style: italic;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.post {
+    background: #fff;
+    padding: 15px;
+    border: 3px solid #505050;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.post_content {
+    margin: 0;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.post_img {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.contacts_list {
+    list-style-type: none;
+    padding-left: 15px;
+}
+
+.contacts_list li a {
+    color: blue;
+    text-decoration: none;
+}
+
+.footer2 {
+    position: fixed;
+    left: 0;
+    margin-top: 2rem;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}

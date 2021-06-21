@@ -7,9 +7,11 @@
 
 Assim como o HTML, o CSS não é realmente uma linguagem de programação. Também não é uma linguagem de marcação  — é uma linguagem de folhas de estilos. Isso significa que o CSS permite aplicar estilos seletivamente a elementos em documentos HTML. Por exemplo, para selecionar todos os elementos parágrafo de uma página HTML e tornar o texto dentro deles vermelho, você escreveria este CSS:
 
+---
 p {
   color: red;
 }
+---
 
 Vamos tentar: cole as três linhas de CSS acima em um novo arquivo, no seu editor de texto, e salve o arquivo como estilo.css na sua pasta estilos.
 
@@ -17,8 +19,10 @@ Ainda assim, precisamos aplicar o CSS ao seu documento HTML. Do contrário, o es
 
 Abra seu arquivo index.html e cole o seguinte código em algum lugar no cabeçalho, ou seja, entre as tags 
 
+---
 <head> e </head>:
 <link href="estilos/estilo.css" rel="stylesheet">
+---
 
 Salve o arquivo index.html e abra ele no seu navegador. Você deve ver uma página como essa:
 
@@ -34,55 +38,61 @@ Toda essa estrutura é chamada de conjunto de regras (mas geralmente usamos o te
 
 - Seletor (Selector)
 
-O nome do elemento HTML no começo do conjunto de regras. Ele seleciona o(s) elemento(s) a serem estilizados (nesse caso, elementos <p>). Para dar estilo a um outro elemento, é só mudar o seletor.
+  O nome do elemento HTML no começo do conjunto de regras. Ele seleciona o(s) elemento(s) a serem estilizados (nesse caso, elementos <p>). Para dar estilo a um outro elemento, é só mudar o seletor.
 
 - Declaração (Declaration)
 
-Uma regra simples como color: red; especificando quais das propriedades do elemento você quer estilizar.
+  Uma regra simples como color: red; especificando quais das propriedades do elemento você quer estilizar.
 
 - Propriedades (Property)
 
-Forma pela qual você estiliza um elemento HTML. (Nesse caso, color é uma propriedade dos elementos <p>.) 
-Em CSS, você escolhe quais propriedades você deseja afetar com sua regra.
+  Forma pela qual você estiliza um elemento HTML. (Nesse caso, color é uma propriedade dos elementos <p>.) 
+
+    Em CSS, você escolhe quais propriedades você deseja afetar com sua regra.
 
 - Valor da propriedade (Property value)
 
-À direita da propriedade, depois dos dois pontos, nós temos o valor de propriedade, que escolhe uma dentre muitas aparências possíveis para uma determinada propriedade (há muitos valores color(cor) além do red(vermelho)).
+  À direita da propriedade, depois dos dois pontos, nós temos o valor de propriedade, que escolhe uma dentre muitas aparências possíveis para uma determinada propriedade (há muitos valores color(cor) além do red(vermelho)).
 
 Note outras partes importantes da sintaxe:
 
 - Cada linha de comando deve ser envolvida em chaves ({}).
 
-Dentro de cada declaração, você deve usar dois pontos (:) para separar a propriedade de seus valores.
-Dentro de cada conjunto de regras, você deve usar um ponto e vírgula (;) para separar cada declaração da próxima.
+  Dentro de cada declaração, você deve usar dois pontos (:) para separar a propriedade de seus valores.
+  
+  Dentro de cada conjunto de regras, você deve usar um ponto e vírgula (;) para separar cada declaração da próxima.
 
 Então para modificar múltiplos valores de propriedades de uma vez, você deve escrevê-los separados por ponto e vírgula, desse modo:
 
+---
 p {
   color: red;
   width: 500px;
   border: 1px solid black;
 }
-
+---
+    
 ### Selecionando múltiplos elementos
 
 Você também pode selecionar vários tipos de elementos e aplicar um único conjunto de regras a todos eles. Inclua múltiplos seletores separados por vírgulas. Por exemplo:
 
+---
 p, li, h1 {
   color: red;
 }
-
+---
+    
 #### Diferentes tipos de seletores
 
 Há muitos tipos diferentes de seletores. Abaixo, nós mostramos apenas os seletores de elementos, que selecionam todos os elementos de um determinado tipo nos documentos HTML. Mas nós podemos fazer seleções mais específicas que essas. Aqui estão alguns dos tipos mais comuns de seletores:
 
 - Nome do seletor	O que ele seleciona	Exemplo
 
-Seletor de elemento (às vezes, chamado tag ou seletor de tipo)	Todos os elementos HTML de determinado tipo.	*p*
+  Seletor de elemento (às vezes, chamado tag ou seletor de tipo)	Todos os elementos HTML de determinado tipo.	*p*
 
 - Seleciona <p>
 
-Seletor de ID	O elemento na página com o ID específicado. Em uma determinada página HTML, é uma boa prática usar um elemento por ID (e claro, um ID por elemento) mesmo que seja permitido usar o mesmo ID para vários elementos.	#my-id
+  Seletor de ID	O elemento na página com o ID específicado. Em uma determinada página HTML, é uma boa prática usar um elemento por ID (e claro, um ID por elemento) mesmo que seja permitido usar o mesmo ID para vários elementos.	#my-id
 
 Seleciona <p id="my-id"> ou <a id="my-id">
 
@@ -101,26 +111,32 @@ Seleciona <a>, mas somente quando o mouse está em cima do link.
 Há muito mais seletores para explorar e você pode achar uma lista mais detalhada em nosso Guia de seletores.
 
 ### Fontes e texto
+
 Agora que exploramos algumas noções básicas de CSS, vamos começar a adicionar mais regras e informações no nosso arquivo estilo.css para deixar nosso exemplo bonito. Vamos começar fazendo nossas fontes e textos parecerem um pouco melhores.
 
 Primeiro de tudo, volte e encontre a fonte do Google Fonts que você armazenou em algum lugar seguro. Adicione o elemento <link> em algum lugar dentro do cabeçalho no index.html (novamente, em qualquer lugar entre as tags <head> e </ head>). Será algo parecido com isto:
 
+---
 <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
+---
+  
 Esse código vincula sua página a uma folha de estilo que baixa a família de fontes Open Sans junto com sua página web e permite que você a defina em seus elementos HTML usando sua própria folha de estilos.
 
 Em seguida, exclua a regra existente no seu arquivo estilo.css. Foi um bom teste, mas o texto vermelho não parece muito bom.
 
 Adicione as seguintes linhas em seu lugar, substituindo a linha do espaço reservado pela linha font-family que você obteve do Google Fonts. (font-family significa apenas a(s) fonte(s) que você deseja usar para o seu texto.) Esta regra primeiro define uma fonte base global e o tamanho da fonte para a página inteira (já que <html> é o elemento pai de toda a página, e todos os elementos dentro dele herdam o mesmo font-size e font-family):
 
-html {font-size: 10px; /* px significa "pixels": o tamanho da fonte base é agora de 10 pixels */
+---
+  html {font-size: 10px; /* px significa "pixels": o tamanho da fonte base é agora de 10 pixels */
   font-family: "Open Sans", sans-serif; /* este deve ser o nome da fonte que você obteve no Google Fonts */
 }
-
+---
+  
 Nota: Qualquer coisa em um documento CSS entre /* e */ é um comentário CSS, que o navegador ignora quando renderiza o código. Este é um lugar para você escrever notas úteis sobre o que você está fazendo.
 
 Agora definiremos tamanhos de fonte para elementos que contêm texto dentro do corpo HTML (<h1> (en-US), <li> e <p>). Também centralizaremos o texto do nosso cabeçalho e definiremos a altura da linha e o espaçamento das letras no conteúdo do corpo para torná-lo um pouco mais legível:
 
+---
 h1 {
   font-size: 60px;
   text-align: center;
@@ -131,7 +147,8 @@ p, li {
   line-height: 2;
   letter-spacing: 1px;
 }
-
+---
+  
 Você pode ajustar esses valores de px para o que você desejar, para deixar seu design com a aparência que quiser, mas no geral seu design deve parecer com isso:a mozilla logo and some paragraphs. a sans-serif font has been set, the font sizes, line height and letter spacing are adjusted, and the main page heading has been centered
 
 ### Caixas, caixas, é tudo sobre caixas
@@ -159,27 +176,30 @@ Então, vamos começar e adicionar mais CSS à nossa página! Continue adicionan
 
 Mudando a cor da página
 
+---
 html {
   background-color: #00539F;
 }
-
+---
+  
 Essa regra define uma cor de fundo para toda a página. Mude a cor acima para a cor que você escolheu ao planejar seu site.
 
 #### Separando o corpo
 
-body {
+---
+  body {
   width: 600px;
   margin: 0 auto;
   background-color: #FF9500;
   padding: 0 20px 20px 20px;
   border: 5px solid black;
 }
+---
 
 Agora para o elemento <body>. Há algumas declarações aqui, então vamos passar por elas uma a uma:
 
 - width: 600px; — Isso força o corpo a ter 600 pixels de largura.
-- margin: 0 auto; — Quando você define dois valores em uma propriedade como margin ou padding, o primeiro 
-valor afeta a parte superior do elemento e a parte inferior (tornando-os 0 nesse caso), e no segundo valor os lados esquerdo e direito (aqui, auto é um valor especial que divide o espaço horizontal uniformemente entre esquerda e direita). Você também pode utilizar um, três ou quatro valores, como documentado aqui.
+- margin: 0 auto; — Quando você define dois valores em uma propriedade como margin ou padding, o primeiro valor afeta a parte superior do elemento e a parte inferior (tornando-os 0 nesse caso), e no segundo valor os lados esquerdo e direito (aqui, auto é um valor especial que divide o espaço horizontal uniformemente entre esquerda e direita). Você também pode utilizar um, três ou quatro valores, como documentado aqui.
 background-color: #FF9500; — como antes, isso define a cor de fundo do elemento. Usamos um tipo de laranja avermelhado no corpo, para opor ao azul escuro no elemento <html>, mas fique à vontade para ir em frente e experimentar.
 
 padding: 0 20px 20px 20px; — temos quatro valores definidos no padding, para criar um pouco de espaço em torno do nosso conteúdo. Dessa vez, estamos definindo sem padding na parte superior do corpo, e 20 pixels no lado esquerdo, na parte inferior e no lado direito. Os valores definem a parte superior, o lado direito, a parte inferior e o lado esquerdo, nessa ordem. Como com a margin, você também pode usar um, dois, ou três valores, conforme documentado na sintaxe do padding.
@@ -188,13 +208,15 @@ border: 5px solid black; — isso simplesmente define uma borda preta sólida de
 
 Posicionando e estilizando o título da nossa página principal
 
-h1 {
+---
+  h1 {
   margin: 0;
   padding: 20px 0;
   color: #00539F;
   text-shadow: 3px 3px 1px black;
 }
-
+---
+  
 Você deve ter notado que há um espaço horrível no topo do corpo. Isso acontece porque os browsers aplicam algumas estilizações padrão ao <h1> (en-US) (entre outros), mesmo quando você não aplicou nenhum CSS! Isso pode soar como uma má ideia, mas queremos ter uma legibilidade básica, mesmo em uma página sem estilos. 
 
 Para nos livrarmos desse espaço, sobrescrevemos o estilo padrão, definindo margin: 0;.
@@ -215,11 +237,13 @@ De novo, tente experimentar com diferentes valores para ver o que você pode cri
 
 ### Centralizando a imagem
 
+---
 img {
   display: block;
   margin: 0 auto;
 }
-
+---
+ 
 Finalmente, centralizaremos a imagem para melhorar a aparência. Nós poderiamos usar novamente o truque margin: 0 auto que aprendemos anteriormente para o corpo, mas também precisamos fazer outra coisa. O elemento <body> é em nível de bloco, o que significa que ocupa espaço na página e pode ter margens e outros valores de espaçamento aplicados a ele. Imagens, por outro lado, são elementos em linha, o que significa que não podem ter margens. 
 
 Então, para aplicar margens a uma imagem, temos que dar o comportamento de nível de bloco a imagem usando display: block;.
@@ -237,3 +261,4 @@ a mozilla logo, centered, and a header and paragraphs. It now looks nicely style
 Se você emperrar, sempre poderá comparar seu trabalho com nosso código de exemplo finalizado no Github.
 
 Aqui, nós só arranhamos na superfície do CSS. Para descobrir mais, vá ao nosso tópico de aprendizado CSS.
+  

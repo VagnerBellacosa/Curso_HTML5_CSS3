@@ -1,0 +1,14 @@
+#teste{
+  width: 400px;
+  height: 200px;
+  background-image: url(logolc.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#teste_1{
+  width: 400px;
+  height: 200px;
+  background-image: url(logolc.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}

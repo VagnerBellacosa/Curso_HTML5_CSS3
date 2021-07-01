@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Machine</title>
+ </head>
+ <body>
+<button>Start machine</button>
+<p>The machine is stopped.</p>
+
+<script>
+const btn = document.querySelector('button');
+const txt = document.querySelector('p');
+
+btn.addEventListener('click', updateBtn);
+
+function updateBtn() {
+  if (btn.textContent === 'Start machine') {
+    btn.textContent = 'Stop machine';
+    txt.textContent = 'The machine has started!';
+  } else {
+    btn.textContent = 'Start machine';
+    txt.textContent = 'The machine is stopped.';
+  }
+}
+</script>
+  
+ </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Active Learning</title>
+ </head>
+ <body>
+  
+  <script>
+
+const list = document.querySelector('.output ul');
+const searchInput = document.querySelector('.output input');
+const searchBtn = document.querySelector('.output button');
+
+list.innerHTML = '';
+
+let myHistory= [];
+
+searchBtn.onclick = function() {
+ if(searchInput.value !== '') {
+ myHistory.unshift(searchInput.value);
+
+ list.innerHTML = '';
+
+ for(let i = 0; i < myHistory.length; i++) {
+ itemText = myHistory[i];
+ const listItem = document.createElement('li');
+ listItem.textContent = itemText;
+ list.appendChild(listItem);
+ }
+
+ if(myHistory.length >= 5) {
+ myHistory.pop();
+ }
+
+ searchInput.value = '';
+ searchInput.focus();
+ }
+}
+
+  </script>
+  
+ </body>
+</html>

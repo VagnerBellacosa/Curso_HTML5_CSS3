@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Formulario Web</title>
+  
+  <link rel="stylesheet" type="text/css" href="style/Formulario.css">
+  
+  
+ </head>
+ <body>
+  
+<p>Required fields are followed by <abbr title="required">*</abbr>.</p>
+
+<!-- So this: -->
+<div>
+  <label for="username">Name:</label>
+  <input id="username" type="text" name="username">
+  <label for="username"><abbr title="required" aria-label="required">*</abbr></label>
+</div>
+
+<!-- would be better done like this: -->
+<div>
+  <label for="username">
+    <span>Name:</span>
+    <input id="username" type="text" name="username">
+    <abbr title="required" aria-label="required">*</abbr>
+  </label>
+</div>
+
+<!-- But this is probably best: -->
+<div>
+  <label for="username">Name: <abbr title="required" aria-label="required">*</abbr></label>
+  <input id="username" type="text" name="username">
+</div>
+  
+ </body>
+</html>

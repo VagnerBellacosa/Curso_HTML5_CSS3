@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="Vagner Bellacosa">
+  <meta name="Keywords" content="Exemplo codigo html com pagina Youtube embutida">
+  <meta name="Description" content="Treinamento avançado em Html e chamada a site externo incluindo video youtube">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  
+<title>HTML Video Tag Example</title>
+</head>
+
+<body>
+<br>
+
+<iframe width="100%" height="443" class="yvideo" id="pgHr6luyjjs"
+              src="http://www.youtube.com/embed/pgHr6luyjjs?rel=0&controls=0&hd=1&showinfo=0&enablejsapi=1"			       
+              frameborder="0" allowfullscreen>
+</iframe>
+
+</div>
+
+<script>
+
+var myVideo=document.getElementById("custom_video_play");
+
+function makeBig() {
+/*altera a largura da tag, automaticamente a altura é alterada porporcionalmente */
+myVideo.width=650;
+}
+
+function makeSmall() {
+/*altera a largura da tag, automaticamente a altura é alterada porporcionalmente */
+myVideo.width=350;
+}
+
+function makeNormal(){
+/*altera a largura da tag, automaticamente a altura é alterada porporcionalmente */
+myVideo.width=450;
+}
+
+function playPause(){
+/* começa o video */
+if (video.paused)
+  video.play();
+else
+  video.pause();
+}
+
+</script>
+
+</body>
+
+</html>

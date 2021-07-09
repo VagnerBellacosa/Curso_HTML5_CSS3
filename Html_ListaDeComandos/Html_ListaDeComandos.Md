@@ -5,7 +5,7 @@
 ### HTML Tags Ordered Alphabetically
 
  | Tag	| Description |
- | --- | --- | --- |
+ | --- | --- | 
  | <!--...--> | 	Defines a comment | 
  | <!DOCTYPE> |  	Defines the document type | 
  | <a> | 	Defines a hyperlink | 
@@ -19,8 +19,7 @@
  | <audio> | 	Defines embedded sound content | 
  | <b> | 	Defines bold text | 
  | <base> | 	Specifies the base URL/target for all relative URLs in a document | 
- | <basefont> | 	Not supported in HTML5. Use CSS instead. | 
-Specifies a default color, size, and font for all text in a document | 
+ | <basefont> | 	Not supported in HTML5. Use CSS instead.  Specifies a default color, size, and font for all text in a document | 
  | <bdi> | 	Isolates a part of text that might be formatted in a different direction from other text outside it | 
  | <bdo> | 	Overrides the current text direction | 
  | <big> | 	Not supported in HTML5. Use CSS instead. Defines big text | 
@@ -77,8 +76,7 @@ Specifies a default color, size, and font for all text in a document |
  | <meta> | 	Defines metadata about an HTML document | 
  | <meter> | 	Defines a scalar measurement within a known range (a gauge) | 
  | <nav> | 	Defines navigation links | 
- | <noframes> | 	Not supported in HTML5. | 
-Defines an alternate content for users that do not support frames | 
+ | <noframes> | 	Not supported in HTML5. Defines an alternate content for users that do not support frames | 
  | <noscript> | 	Defines an alternate content for users that do not support client-side scripts | 
  | <object> | 	Defines a container for an external application | 
  | <ol> | 	Defines an ordered list | 

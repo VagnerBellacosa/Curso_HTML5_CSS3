@@ -1,0 +1,326 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--************************************************************************-->
+<!--* Playing Cards with CSS Demo                                          *-->
+<!--*                                                                      *-->
+<!--* Copyright 2001 by Mike Hall                                          *-->
+<!--* Please see https://www.brainjar.com for terms of use.                 *-->
+<!--************************************************************************-->
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Tutorias CSS - Baralho com CSS</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link href="./styles/default.css" rel="stylesheet" type="text/css" />
+<style id="cardStyles" type="text/css">
+/******************************************************************************
+* Styles for playing cards.                                                   *
+******************************************************************************/
+.card {
+  background-image: url("./image/cardback.png");
+  border-color: #808080 #000000 #000000 #808080;
+  border-width: 1px;
+  border-style: solid;
+  font-size: 20pt;
+  position: absolute;
+  width:  3.75em;
+  height: 5.00em;
+}
+
+.front {
+  background-color: #ffffff;
+  color: #000000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.red { color: #ff0000; }
+
+.index {
+  font-size: 50%;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  left: 0.25em;
+  top:  0.25em;
+}
+
+.ace {
+  font-size: 300%;
+  position: absolute;
+  left: 0.325em;
+  top:  0.250em;
+}
+
+.face {
+  border: 1px solid #000000;
+  position: absolute;
+  left: 0.50em;
+  top:  0.45em;
+  width:  2.6em;
+  height: 4.0em;
+}
+
+.spotA1 { position: absolute; left: 0.60em; top: 0.5em; }
+.spotA2 { position: absolute; left: 0.60em; top: 1.5em; }
+.spotA3 { position: absolute; left: 0.60em; top: 2.0em; }
+.spotA4 { position: absolute; left: 0.60em; top: 2.5em; }
+.spotA5 { position: absolute; left: 0.60em; top: 3.5em; }
+
+.spotB1 { position: absolute; left: 1.55em; top: 0.5em; }
+.spotB2 { position: absolute; left: 1.55em; top: 1.0em; }
+.spotB3 { position: absolute; left: 1.55em; top: 2.0em; }
+.spotB4 { position: absolute; left: 1.55em; top: 3.0em; }
+.spotB5 { position: absolute; left: 1.55em; top: 3.5em; }
+
+.spotC1 { position: absolute; left: 2.50em; top: 0.5em; }
+.spotC2 { position: absolute; left: 2.50em; top: 1.5em; }
+.spotC3 { position: absolute; left: 2.50em; top: 2.0em; }
+.spotC4 { position: absolute; left: 2.50em; top: 2.5em; }
+.spotC5 { position: absolute; left: 2.50em; top: 3.5em; }
+
+/******************************************************************************
+* Miscellaneous styles.                                                       *
+******************************************************************************/
+
+body {
+  background-color: #40a040;
+}
+#demoBox {
+  border-color: #000000;
+  border-style: solid;
+  border-width: 1px;
+  padding: 8px;
+  width: 35em;
+}
+
+</style>
+<script type="text/javascript">//<![CDATA[
+
+//*****************************************************************************
+// Do not remove this notice.
+//
+// Copyright 2001 by Mike Hall.
+// See https://www.brainjar.com for terms of use.                                                                        *
+//*****************************************************************************
+
+var minSize = 8;
+
+function resizeCards(d) {
+
+  var n;
+
+  // Change the font size on the "card" style class.
+
+  // DOM-compliant browsers.
+
+  if (document.styleSheets[1].cssRules) {
+    n = parseInt(document.styleSheets[1].cssRules[0].style.fontSize, 10);
+    document.styleSheets[1].cssRules[0].style.fontSize = Math.max(n + d, minSize) + "pt";
+
+    // For NS 6.1, insert a dummy rule to force styles to be reapplied.
+
+    if (navigator.userAgent.indexOf("Netscape6/6.1") >= 0)
+      document.styleSheets[1].insertRule(null, document.styleSheets[1].cssRules.length);
+  }
+
+  // IE browsers.
+
+  else if (document.styleSheets[1].rules[0]) {
+    n = parseInt(document.styleSheets[1].rules[0].style.fontSize, 10);
+    document.styleSheets[1].rules[0].style.fontSize = Math.max(n + d, minSize) + "pt";
+  }
+
+  return false;
+}
+
+//]]></script>
+
+</head>
+<body>
+
+<!-- Normal page content. -->
+
+<div id="demoBox" style="background-color:#ffffff;">
+
+<h1 style="font-size:1.2em ">Baralho com CSS </h1>
+
+<p>Est&aacute; p&aacute;gina demonstra o emprego das t&eacute;cnicas para cria&ccedil;&atilde;o de um   baralho completo usando marca&ccedil;&atilde;o e regras de estilo. </p>
+
+<p>Os links a seguir acionam um  JavaScript que demonstra como aumentar e diminuir o tamanho das cartas alterando a propriedade <code>font-size</code> da classe <code>.card</code>.</p>
+
+<p>
+<a href="" onclick="return resizeCards(-2)">diminuir</a>
+|
+<a href="" onclick="return resizeCards(+2)">aumentar</a>
+</p>
+
+<p>Veja o c&oacute;digo fonte desta p&aacute;gina para  detalhes da marcação e regras de estilo.</p>
+
+</div>
+
+<div style="position:relative;margin-top:1em;">
+
+<div class="card" style="left:0em;top:0em;">
+  <div class="front">
+    <div class="index">10<br />&spades;</div>
+    <div class="spotA1">&spades;</div>
+    <div class="spotA2">&spades;</div>
+    <div class="spotA4">&spades;</div>
+    <div class="spotA5">&spades;</div>
+    <div class="spotB2">&spades;</div>
+
+    <div class="spotB4">&spades;</div>
+    <div class="spotC1">&spades;</div>
+    <div class="spotC2">&spades;</div>
+    <div class="spotC4">&spades;</div>
+    <div class="spotC5">&spades;</div>
+  </div>
+</div>
+
+<div class="card" style="left:4em;top:0em;">
+  <div class="front red">
+
+    <div class="index">9<br />&hearts;</div>
+    <div class="spotA1">&hearts;</div>
+    <div class="spotA2">&hearts;</div>
+    <div class="spotA4">&hearts;</div>
+    <div class="spotA5">&hearts;</div>
+    <div class="spotB3">&hearts;</div>
+    <div class="spotC1">&hearts;</div>
+    <div class="spotC2">&hearts;</div>
+
+    <div class="spotC4">&hearts;</div>
+    <div class="spotC5">&hearts;</div>
+  </div>
+</div>
+
+<div class="card" style="left:8em;top:0em;">
+  <div class="front">
+    <div class="index">8<br />&clubs;</div>
+    <div class="spotA1">&clubs;</div>
+    <div class="spotA3">&clubs;</div>
+
+    <div class="spotA5">&clubs;</div>
+    <div class="spotB2">&clubs;</div>
+    <div class="spotB4">&clubs;</div>
+    <div class="spotC1">&clubs;</div>
+    <div class="spotC3">&clubs;</div>
+    <div class="spotC5">&clubs;</div>
+  </div>
+</div>
+
+<div class="card" style="left:12em;top:0em;">
+
+  <div class="front red">
+    <div class="index">7<br />&diams;</div>
+    <div class="spotA1">&diams;</div>
+    <div class="spotA3">&diams;</div>
+    <div class="spotA5">&diams;</div>
+    <div class="spotB2">&diams;</div>
+    <div class="spotC1">&diams;</div>
+    <div class="spotC3">&diams;</div>
+
+    <div class="spotC5">&diams;</div>
+  </div>
+</div>
+
+<div class="card" style="left:16em;top:0em;">
+  <div class="front">
+    <div class="index">6<br />&spades;</div>
+    <div class="spotA1">&spades;</div>
+    <div class="spotA3">&spades;</div>
+    <div class="spotA5">&spades;</div>
+
+    <div class="spotC1">&spades;</div>
+    <div class="spotC3">&spades;</div>
+    <div class="spotC5">&spades;</div>
+  </div>
+</div>
+
+<div class="card" style="left:20em;top:0em;">
+  <div class="front red">
+    <div class="index">5<br />&hearts;</div>
+    <div class="spotA1">&hearts;</div>
+
+    <div class="spotA5">&hearts;</div>
+    <div class="spotB3">&hearts;</div>
+    <div class="spotC1">&hearts;</div>
+    <div class="spotC5">&hearts;</div>
+  </div>
+</div>
+
+<div class="card" style="left:0em;top:6em;">
+  <div class="front">
+    <div class="index">4<br />&clubs;</div>
+
+    <div class="spotA1">&clubs;</div>
+    <div class="spotA5">&clubs;</div>
+    <div class="spotC1">&clubs;</div>
+    <div class="spotC5">&clubs;</div>
+  </div>
+</div>
+
+<div class="card" style="left:4em;top:6em;">
+  <div class="front red">
+    <div class="index">3<br />&diams;</div>
+
+    <div class="spotB1">&diams;</div>
+    <div class="spotB3">&diams;</div>
+    <div class="spotB5">&diams;</div>
+  </div>
+</div>
+
+<div class="card" style="left:8em;top:6em;">
+  <div class="front">
+    <div class="index">2<br />&spades;</div>
+    <div class="spotB1">&spades;</div>
+
+    <div class="spotB5">&spades;</div>
+  </div>
+</div>
+
+<div class="card" style="left:12em;top:6em;">
+  <div class="front red">
+    <div class="index">A<br />&hearts;</div>
+    <div class="ace">&hearts;</div>
+  </div>
+</div>
+
+<div class="card" style="left:16em;top:6em;">
+  <div class="front">
+    <div class="index">K<br />&clubs;</div>
+    <img class="face" src="./image/king.gif" alt="" width="80" height="130" />
+    <div class="spotA1">&clubs;</div>
+    <div class="spotC5">&clubs;</div>
+  </div>
+</div>
+
+<div class="card" style="left:20em;top:6em;">
+  <div class="front red">
+    <div class="index">Q<br />&diams;</div>
+    <img class="face" src="./image/queen.gif" alt="" width="80" height="130" />
+    <div class="spotA1">&diams;</div>
+    <div class="spotC5">&diams;</div>
+  </div>
+</div>
+
+<div class="card" style="left:0em;top:12em;">
+
+  <div class="front">
+    <div class="index">J<br />&spades;</div>
+    <img class="face" src="./image/jack.gif" alt="" width="80" height="130" />
+    <div class="spotA1">&spades;</div>
+    <div class="spotC5">&spades;</div>
+  </div>
+</div>
+
+<div class="card" style="left:4em;top:12em;"></div>
+
+</div>
+
+<div id="footer">
+<?php include('../inc/footer.inc.php'); ?> 		
+</div> 
+</body>
+</html>

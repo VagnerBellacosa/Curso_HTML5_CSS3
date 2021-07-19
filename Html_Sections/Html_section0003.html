@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Nlog Portal</title>
+  
+  <script src="/js/widgets.js" async="" crossorigin="" ></script> 
+  <script src="/js/file-issue.js" async="" crossorigin="" ></script>
+  <link href="Style/styles.css" rel="stylesheet" type="text/css">
+  
+ </head>
+
+ <body>
+
+
+<link rel=stylesheet href="/styles/main.css">
+<article is="stock-widget">
+ <h1>Stocks</h1>
+ <table>
+  <thead> <tr> <th> Stock <th> Value <th> Delta
+  <tbody> <template> <tr> <td> <td> <td> </template>
+ </table>
+ <p> <input type=button value="Refresh" onclick="this.parentElement.refresh()">
+</article>
+<article is="news-widget">
+ <h1>News</h1>
+ <ul>
+  <template>
+   <li>
+    <p><img> <strong></strong>
+    <p>
+  </template>
+ </ul>
+ <p> <input type=button value="Refresh" onclick="this.parentElement.refresh()">
+</article>
+
+
+  
+ </body>
+</html>
+
+

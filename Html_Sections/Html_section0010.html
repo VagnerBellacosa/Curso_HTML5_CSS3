@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>eHome Portal</title>
+  
+  <script src="/js/widgets.js" async="" crossorigin="" ></script> 
+  <script src="/js/file-issue.js" async="" crossorigin="" ></script>
+  <link href="Style/styles.css" rel="stylesheet" type="text/css">
+  
+ </head>
+
+ <body>
+
+
+<p><input type=button value="Compose" onclick="compose()"></p>
+<nav>
+ <h1>Folders</h1>
+ <ul>
+  <li> <a href="/inbox" onclick="return openFolder(this.href)">Inbox</a> <span class=count></span>
+  <li> <a href="/sent" onclick="return openFolder(this.href)">Sent</a>
+  <li> <a href="/drafts" onclick="return openFolder(this.href)">Drafts</a>
+  <li> <a href="/trash" onclick="return openFolder(this.href)">Trash</a>
+  <li> <a href="/customers" onclick="return openFolder(this.href)">Customers</a>
+ </ul>
+</nav>
+
+
+  
+ </body>
+</html>
+
+

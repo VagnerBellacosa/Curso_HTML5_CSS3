@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html lang="en">
+ <head>
+  <title>Online or offline?</title>
+  
+  <script src="/js/widgets.js" async="" crossorigin="" ></script> 
+  <script src="/js/file-issue.js" async="" crossorigin="" ></script>
+  <link href="Style/styles.css" rel="stylesheet" type="text/css">
+  
+  <script>
+   function update(online) {
+     document.getElementById('status').textContent =
+       online ? 'Online' : 'Offline';
+   }
+  </script>
+ </head>
+ <body ononline="update(true)"
+       onoffline="update(false)"
+       onload="update(navigator.onLine)">
+  <p>You are: <span id="status">(Unknown)</span></p>
+ </body>
+</html>

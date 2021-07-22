@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+ <title>Sample HTML5 File</title>
+ </head>
+
+ <body onload="pageLoaded();">
+
+ <canvas width="640" height="480" id="testcanvas" style="border: 1px solid black;">
+ Your browser does not support HTML5 Canvas. Please shift to a newer browser.
+ </canvas>
+
+<script type="text/javascript">
+ function pageLoaded(){
+ // Get a handle to the canvas object
+ var canvas = document.getElementById("testcanvas");
+ // Get the 2d context for this canvas
+ var context = canvas.getContext("2d");
+ // Our drawing code here...
+ 
+ // FILLED RECTANGLES
+// Draw a solid square with width and height of 100 pixels at (200,10)
+context.fillRect(200, 10, 100, 100);
+// Draw a solid square with width of 90 pixels and height of 30 pixels at (50,70)
+context.fillRect(50, 70, 90, 30);
+// STROKED RECTANGLES
+// Draw a rectangular outline with width and height of 50 pixels at (110, 10)
+context.strokeRect(110, 10, 50, 50);
+// Draw a rectangular outline with width and height of 50 pixels at (30, 10)
+context.strokeRect(30, 10, 50, 50);
+// CLEARING RECTANGLES
+// Clear a rectangle with width of 30 pixels and height of 20 pixels at (210, 20)
+context.clearRect(210, 20, 30, 20);
+// Clear a rectangle with width of 30 pixels and height of 20 pixels at (260, 20)
+context.clearRect(260, 20, 30, 20);
+
+
+
+ }
+</script>
+
+ </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML5 Logo</title>
+<meta charset="UTF-8">
+<script>
+function init() {
+ ctx = document.getElementById('canvas').getContext('2d');
+ ctx.fillStyle = "#E34C26";
+ ctx.beginPath();
+ ctx.moveTo(39, 250);
+ ctx.lineTo(17, 0);
+ ctx.lineTo(262, 0);
+ ctx.lineTo(239, 250);
+ ctx.lineTo(139, 278);
+ ctx.closePath();
+ ctx.fill();
+}
+</script>
+</head>
+<body onLoad="init();">
+<canvas id="canvas" width="600" height="400">
+Your browser does not support the canvas element.
+</canvas>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+ <title>Sample HTML5 File</title>
+ </head>
+
+ <body onload="pageLoaded();">
+
+ <canvas width="640" height="480" id="testcanvas" style="border: 1px solid black;">
+ Your browser does not support HTML5 Canvas. Please shift to a newer browser.
+ </canvas>
+
+<script type="text/javascript">
+ function pageLoaded(){
+ // Get a handle to the canvas object
+ var canvas = document.getElementById("testcanvas");
+ // Get the 2d context for this canvas
+ var context = canvas.getContext("2d");
+ // Our drawing code here...
+ 
+ // DRAWING COMPLEX SHAPES
+// Draw a filled triangle
+context.beginPath();
+context.moveTo(10, 120); // Start drawing at 10, 120
+context.lineTo(10, 180);
+context.lineTo(110, 150);
+context.fill(); // Close the shape and fill it out
+// Draw a stroked triangle
+context.beginPath();
+context.moveTo(140, 160); // Start drawing at 140, 160
+context.lineTo(140, 220);
+context.lineTo(40, 190);
+context.closePath();
+context.stroke();
+// Draw a more complex set of lines
+context.beginPath();
+context.moveTo(160, 160); // Start drawing at 160, 160
+context.lineTo(170, 220);
+context.lineTo(240, 210);
+context.lineTo(260, 170);
+context.lineTo(190, 140);
+context.closePath();
+context.stroke();
+// DRAWING ARCS & CIRCLES
+// Draw a semicircle
+context.beginPath();
+// Draw an arc at (400, 50) with radius 40 from 0 to 180 degrees, anticlockwise
+// PI radians = 180 degrees
+context.arc(100, 300, 40, 0, Math.PI, true);
+context.stroke();
+// Draw a full circle
+context.beginPath();
+// Draw an arc at (500, 50) with radius 30 from 0 to 360 degrees, anticlockwise
+// 2*PI radians = 360 degrees
+context.arc(100, 300, 30, 0, 2 * Math.PI, true);
+context.fill();
+// Draw a three-quarter arc
+context.beginPath();
+// Draw an arc at (400, 100) with radius 25 from 0 to 270 degrees, clockwise
+// (3/2*PI radians = 270 degrees)
+context.arc(200, 300, 25, 0, 3 / 2 * Math.PI, false);
+context.stroke();
+
+
+
+ }
+</script>
+
+ </body>
+</html>

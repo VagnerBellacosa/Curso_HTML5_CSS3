@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+ <title>Sample HTML5 File</title>
+ </head>
+
+ <body onload="pageLoaded();">
+
+ <canvas width="640" height="480" id="testcanvas" style="border: 1px solid black;">
+ Your browser does not support HTML5 Canvas. Please shift to a newer browser.
+ </canvas>
+
+<img src="fire.png" id="fire">
+
+<script type="text/javascript">
+ function pageLoaded(){
+ 
+  // Get a handle to the canvas object
+ var canvas = document.getElementById("testcanvas");
+ // Get the 2d context for this canvas
+ var context = canvas.getContext("2d");
+ // Our drawing code here...
+ 
+
+
+
+
+// FILL STYLES AND COLORS
+// Set fill color to red
+context.fillStyle = "red";
+// Draw a red filled rectangle
+context.fillRect(310, 160, 100, 50);
+// Set stroke color to green
+context.strokeStyle = "green";
+// Draw a green stroked rectangle
+context.strokeRect(310, 240, 100, 50);
+
+// Set fill color to yellow using rgb()
+context.fillStyle = "rgb(255, 255, 0)";
+// Draw a yellow filled rectangle
+context.fillRect(420, 160, 100, 50);
+// Set fill color to green with an alpha of 0.6
+context.fillStyle = "rgba(0, 255, 0, 0.6)";
+// Draw a semi-transparent green filled rectangle
+context.fillRect(450, 180, 100, 50);
+// TEXTURES
+// Get a handle to the Image object
+var fireImage = document.getElementById("fire");
+var pattern = context.createPattern(fireImage, "repeat");
+// Set fill style to newly created pattern
+context.fillStyle = pattern;
+// Draw a pattern filled rectangle
+context.fillRect(420, 240, 130, 50);
+
+
+
+ }
+</script>
+
+ </body>
+</html>

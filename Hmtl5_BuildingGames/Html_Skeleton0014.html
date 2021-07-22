@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+ <title>Sample HTML5 File</title>
+ </head>
+
+ <body>
+
+ <canvas width="640" height="480" id="testcanvas" style="border: 1px solid black;">
+ Your browser does not support HTML5 Canvas. Please shift to a newer browser.
+ </canvas>
+
+<img src="spaceship.png" id="spaceship">
+
+
+<audio controls="controls">
+ <source src="music.ogg" type="audio/ogg" />
+ <source src="batman.mp3" type="audio/mpeg" />
+ Your browser does not support HTML5 Audio. Please shift to a newer browser.
+</aud
+
+<br>
+
+
+<script>
+
+var image = new Image();
+image.src = "spaceship.png";
+
+image.onload = function() {
+ alert("Image finished loading");
+};
+
+</script>
+
+
+ </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+head, style {display: block; }
+[contenteditable] {-webkit-user-modify: read-write-plaintext-only;}
+style:first-of-type {visibility:hidden;}
+#editme {background-color: #dedede;padding: 20px; font-size: 1.1em; white-space: pre; font-family: monospace; white-space:pre; border-radius: 10px; border: 3px solid #aaa; background-color:#dedede; margin: 20px auto; width: 80%; font-family:"Courier New", Courier, monospace; max-height: 180px; overflow: scroll; }
+div {
+        background-image: linear-gradient(red, red),
+                          linear-gradient(green, green),
+                          linear-gradient(blue, blue),
+                          linear-gradient(black, black),
+                          linear-gradient(red, red),
+						  linear-gradient(orange, orange),
+                          linear-gradient(green, green),
+                          linear-gradient(blue, blue),
+                          linear-gradient(black, black),
+                          linear-gradient(red, red),
+                          linear-gradient(green, green),
+                          linear-gradient(blue, blue),
+                          linear-gradient(black, black)
+                          ;
+        background-repeat: no-repeat;
+        height: 600px;
+        width: 700px;
+}
+</style>
+
+<style contenteditable id="editme">div {
+        background-size: 10px 10px, 20px 20px, 30px 30px, 40px 40px;
+        transition: background-size 1s ease-in 0s;
+        background-position: 10px 10px, 20px 20px, 30px 30px, 40px 40px,
+        10px 50px, 20px 70px, 30px 90px, 40px 140px,
+        10px 150px, 20px 220px, 30px 330px, 40px 440px,
+        110px 10px, 220px 20px, 330px 30px, 440px 40px;
+    }
+    div:hover {
+        background-size: 33px 33px, 66px 66px, 99px 99px;
+    }</style>
+<title>property value interpolation</title>
+</head>
+
+<body>
+<ul>
+<div></div>
+</body>
+</html>
+
+

@@ -1,0 +1,27 @@
+div {
+  background-color: black;
+  color: white;
+  transition: 10s;
+}
+div:hover {
+  background-color: white;
+  color: black;
+}
+#animation:hover {
+	-webkit-animation: rainbow 10s;
+	animation: rainbow 10s;	
+}
+@-webkit-keyframes rainbow {
+	0% { background-color: hsl(0, 100%, 0%);}
+	25% { background-color: hsl(90, 100%, 25%);}
+	50% { background-color: hsl(180, 100%, 50%);}
+	75% { background-color: hsl(270, 100%, 75%);}
+	100% { background-color: hsl(360, 100%, 100%);}
+}
+@keyframes rainbow {
+	0% { background-color: hsl(0, 100%, 0%);}
+	25% { background-color: hsl(90, 100%, 25%);}
+	50% { background-color: hsl(180, 100%, 50%);}
+	75% { background-color: hsl(270, 100%, 75%);}
+	100% { background-color: hsl(360, 100%, 100%);}
+}

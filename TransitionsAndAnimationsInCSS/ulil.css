@@ -1,0 +1,13 @@
+
+nav li ul {
+ transition-property: transform;
+ transition-duration: 200ms;
+ transition-timing-function: ease-in;
+ transition-delay: 50ms;
+ transform: scale(1, 0);
+ transform-origin: top center;
+}
+
+nav li:hover ul {
+ transform: scale(1, 1);
+}

@@ -1,0 +1,12 @@
+/* Matches some of the time, only when valid. */
+input:valid {
+	border-color: green;
+}
+/* matches  some of the time, when the prior selector does NOT match. */
+input:invalid {
+	border-color: red;
+}
+/* matches  some of the time, whether the input is valid or invalid */
+input:focus {
+	border-color: yellow;
+}

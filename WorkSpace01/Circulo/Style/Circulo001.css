@@ -1,0 +1,104 @@
+  .circulo {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	float: left;
+	margin: 15px;
+	transition: 0.3s ease;
+}
+
+.circulo:hover{
+	transform: rotateY(180deg);
+}
+
+.circulo-pequeno {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin: 10px;
+	float: left;
+	animation: circulo 1s linear infinite;
+}
+
+.circulo-pequeno.lime {
+	animation: circulo-inverno 1s linear infinite;
+}
+
+@keyframes circulo {
+	from {
+		transform: rotate(0deg) translateX(30px);
+	} to {
+		transform: rotate(360deg) translateX(30px);
+	}
+}
+
+@keyframes circulo-inverno {
+	from {
+		transform: rotate(0deg) translateX(30px);
+	} to {
+		transform: rotate(-360deg) translateX(30px);
+	}
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.lime {
+	background: springgreen;
+}
+
+.tomato {
+	background: tomato;
+}
+
+.container {
+	max-width: 520px;
+	margin: 20px auto;
+}
+
+.container::after, .container::before {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+h1, h2 {
+	text-align: center;
+	margin: 40px 0;
+	font-family: monaco;
+	color: #693BB6;
+}
+
+h2 {
+	margin-bottom: 100px;
+}
+
+footer {
+	text-align: center;
+	margin: 40px;
+}
+
+#origamid {
+	font-family: monaco;
+	text-decoration: none;
+	color: #693BB6;
+	display: inline-block;
+}
+
+#origamid::after, #origamid::before {
+	content: '';
+	display: block;
+	background: #693BB6;
+	width: 0;
+	height: 2px;
+	border-radius: 4px;
+	margin: 6px auto 6px auto;
+	transition: all .2s ease;
+}
+
+#origamid:hover::after, #origamid:hover::before {
+	width: 100%;
+}

@@ -1,0 +1,119 @@
+ .flash {
+	animation-name: bordasombra, pisca;
+	animation-duration: .5s, .25s;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-fill-mode: both;
+	animation-play-state: running;
+}
+
+.flash:hover {
+	animation-play-state: paused;
+}
+
+@keyframes bordasombra {
+	0% {
+		box-shadow: 0;
+	}
+	10% {
+		box-shadow: inset 0 0 0 5px #96F;
+	}
+	20% {
+		box-shadow: inset 0 0 0 5px #96F,
+								inset 0 0 0 10px #84E;
+	}
+	30% {
+		box-shadow: inset 0 0 0 5px #96F,
+								inset 0 0 0 10px #84E,
+								inset 0 0 0 15px #96F;
+	}
+	40% {
+		box-shadow: inset 0 0 0 5px #96F,
+								inset 0 0 0 10px #84E,
+								inset 0 0 0 15px #96F,
+								inset 0 0 0 20px #84E;
+	}
+	50% {
+		box-shadow: inset 0 0 0 5px #96F,
+								inset 0 0 0 10px #84E,
+								inset 0 0 0 15px #96F,
+								inset 0 0 0 20px #84E,
+								inset 0 0 0 25px #96F;
+	}
+	60% {
+		box-shadow: inset 0 0 0 5px #96F,
+								inset 0 0 0 10px #84E,
+								inset 0 0 0 15px #96F,
+								inset 0 0 0 20px #84E,
+								inset 0 0 0 25px #96F,
+								inset 0 0 0 30px #84E
+	}
+	70% {
+		box-shadow: inset 0 0 0 5px #96F,
+								inset 0 0 0 10px #84E,
+								inset 0 0 0 15px #96F,
+								inset 0 0 0 20px #84E,
+								inset 0 0 0 25px #96F,
+								inset 0 0 0 30px #84E,
+								inset 0 0 0 35px #96F
+	}
+	80% {
+		box-shadow: inset 0 0 0 5px #96F,
+								inset 0 0 0 10px #84E,
+								inset 0 0 0 15px #96F,
+								inset 0 0 0 20px #84E,
+								inset 0 0 0 25px #96F,
+								inset 0 0 0 30px #84E,
+								inset 0 0 0 35px #96F,
+								inset 0 0 0 40px #84E
+	}
+	90% {
+		box-shadow: inset 0 0 0 5px #96F,
+								inset 0 0 0 10px #84E,
+								inset 0 0 0 15px #96F,
+								inset 0 0 0 20px #84E,
+								inset 0 0 0 25px #96F,
+								inset 0 0 0 30px #84E,
+								inset 0 0 0 35px #96F,
+								inset 0 0 0 40px #84E,
+								inset 0 0 0 45px #96F
+	}
+	100% {
+		box-shadow: inset 0 0 0 5px #96F,
+								inset 0 0 0 10px #84E,
+								inset 0 0 0 15px #96F,
+								inset 0 0 0 20px #84E,
+								inset 0 0 0 25px #96F,
+								inset 0 0 0 30px #84E,
+								inset 0 0 0 35px #96F,
+								inset 0 0 0 40px #84E,
+								inset 0 0 0 45px #96F,
+								inset 0 0 0 50px #84E
+	}
+}
+
+@keyframes pisca {
+	0%, 49% {
+		color: #84e;
+	}
+	50%, 100% {
+		color: white;
+	}
+}
+
+a {
+	display: block;
+	padding: 80px;
+	background: #84e;
+	width: 200px;
+	text-align: center;
+	border-radius: 2px;
+	color: white;
+	font-size: 1.6em;
+	text-transform: uppercase;
+	font-family: monospace;
+	margin: 20px auto;
+	text-decoration: none;
+}

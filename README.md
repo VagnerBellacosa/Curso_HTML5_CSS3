@@ -1,3 +1,14 @@
+<!-- PROJECT SHIELDS -->
+
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+<!-- PROJECT LOGO -->
+![Bootcamps na Digital Innovation One](Images/capa.png "HTML")
 
 
 ![Link icon](https://www.hostinger.com.br/tutoriais/wp-content/themes/tutorialsthemeuplift/public/images/social-icons/link.svg) [![Twitter logo](https://www.hostinger.com.br/tutoriais/wp-content/themes/tutorialsthemeuplift/public/images/social-icons/twitter.svg)](https://twitter.com/intent/tweet?text=O Que é HTML? Guia Básico Para Iniciantes&url=www.hostinger.com.br/tutoriais/o-que-e-html-conceitos-basicos) [![Facebook logo](https://www.hostinger.com.br/tutoriais/wp-content/themes/tutorialsthemeuplift/public/images/social-icons/facebook.svg)](https://www.facebook.com/sharer/sharer.php?u=www.hostinger.com.br/tutoriais/o-que-e-html-conceitos-basicos) [![LinkedIn logo](https://www.hostinger.com.br/tutoriais/wp-content/themes/tutorialsthemeuplift/public/images/social-icons/linkedin.svg)](https://www.linkedin.com/sharing/share-offsite/?url=www.hostinger.com.br/tutoriais/o-que-e-html-conceitos-basicos) [![Email icon](https://www.hostinger.com.br/tutoriais/wp-content/themes/tutorialsthemeuplift/public/images/social-icons/mail.svg)](mailto:?subject=O Que é HTML? Guia Básico Para Iniciantes&body=Article: www.hostinger.com.br/tutoriais/o-que-e-html-conceitos-basicos)
@@ -36,8 +47,6 @@ Conteúdo
 
 ## O Que É HTML – Vídeo
 
-
-
 ## **Como Funciona o HTML**
 
 Um site médio inclui diversas páginas HTML diferentes. Por exemplo, ele pode trazer uma página inicial, uma página “sobre” e uma página de contato. Cada uma delas possui um arquivo HTML separado.
@@ -66,6 +75,7 @@ Outro atributo é a classe HTML, que é mais importante para desenvolvimento e p
 
 Por exemplo, vamos usar o mesmo estilo para um cabeçalho <h1> e para um parágrafo <p>. O estilo inclui cor de fundo, borda, margem e preenchimento — tudo dentro da classe .important. Para termos o mesmo estilo no <h1> e no <p>, adicione class=”important” depois de cada tag de abertura:
 
+```
 <**html**>
 
 <**head**>
@@ -99,16 +109,21 @@ Por exemplo, vamos usar o mesmo estilo para um cabeçalho <h1> e para um parágr
 </**body**>
 
 </**html**>
+```
 
 A maioria dos elementos possui uma tag de abertura e de fechamento, mas alguns não precisam fechar a tag para funcionar. Esse é o caso dos elementos vazios. Eles não usam uma tag de fechamento pois não têm conteúdo:
 
+```
 <img src="/" alt="Imagem">
+```
 
 Essa tag de imagem possui dois atributos — um atributo src (que é um caminho de imagem) e um atributo alt (que é o texto de descrição). Contudo, ele não tem conteúdo nem uma tag de fechamento.
 
 Finalmente, cada documento HTML deve começar com uma declaração <!DOCTYPE> para informar ao navegador qual é o tipo de documento. Com o HTML5, a declaração doctype HTML pública será:
 
+```
 **<!DOCTYPE html>**
+```
 
 ## **A História do HTML**
 
@@ -136,6 +151,7 @@ Toda página HTML usa essas três tags:
 - A tag <head> contém metadados sobre o título e a codificação de caracteres da página.
 - A tag <body> inclui todo o conteúdo que aparece na página.
 
+```
 <**html**>
 
  <**head**>
@@ -151,8 +167,9 @@ Toda página HTML usa essas três tags:
  </**body**>
 
 </**html**>
+```
 
-Outras tags de bloco populares são:
+#### Outras tags de bloco populares são:
 
 - Tags de Cabeçalho – elas variam entre <h1> e <h6>, onde h1 tem um tamanho maior, que vai diminuindo até chegar no h6.
 - Tags de parágrafo – são abertas usando a tag <p>.
@@ -164,6 +181,9 @@ Um elemento em linha (ou inline) formatam o conteúdo interno de elementos de bl
 
 Por exemplo, uma tag <strong> faz o elemento ser renderizado em negrito, enquanto a tag <em> faz ele aparecer em itálico. Os hiperlinks também são elementos em linha que usam uma tag <a> e um atributo href para indicar o destino do link:
 
+```
+<a href="https://example.com/">Click me!</a>
+```
 <a href="https://example.com/">Click me!</a>
 
 ## **A Evolução do HTML. Qual a diferença entre HTML e HTML5?**
@@ -231,3 +251,27 @@ O HTML é uma linguagem amigável para iniciantes, que possui bastante suporte e
 <iframe allowfullscreen="" class="intercom-borderless-frame intercom-6idf9y eqgwjwo0" name="intercom-borderless-frame" title="Intercom live chat mensagem" data-intercom-frame="true" role="modal" data-gtm-yt-inspected-1_19="true" data-gtm-yt-inspected-7887523_1043="true" data-gtm-yt-inspected-7887523_1046="true" style="box-sizing: content-box; font-family: intercom-font, &quot;Helvetica Neue&quot;, &quot;Apple Color Emoji&quot;, Helvetica, Arial, sans-serif; font-size: 10px; font-style: normal; letter-spacing: normal; font-stretch: normal; font-variant: normal; font-weight: normal; text-align-last: initial; text-decoration: none; text-indent: 0px; text-shadow: none; text-transform: none; alignment-baseline: baseline; animation-play-state: running; backface-visibility: visible; background-color: transparent; background-image: none; baseline-shift: baseline; border: 0px none transparent; border-radius: 0px; inset: auto 10px 90px auto; -webkit-box-decoration-break: slice; box-shadow: none; caption-side: top; clear: none; clip: auto; color: inherit; columns: auto auto; column-fill: balance; column-gap: normal; content: normal; counter-increment: none; counter-reset: none; cursor: auto; direction: ltr; display: inline; dominant-baseline: auto; empty-cells: show; float: none; height: 417.984px; -webkit-hyphenate-character: auto; hyphens: manual; image-rendering: auto; line-height: inherit; list-style: outside none disc; margin: 0px; max-height: calc(100% - 90px); max-width: none; min-height: 0px; min-width: 0px; opacity: 1; orphans: 2; outline-offset: 0px; overflow: visible; padding: 0px; page: auto; break-after: auto; break-before: auto; break-inside: auto; perspective: none; perspective-origin: 50% 50%; pointer-events: auto; position: fixed; quotes: none; resize: none; size: auto; table-layout: auto; transform: none; transform-origin: 50% 50% 0px; transform-style: flat; unicode-bidi: normal; vertical-align: baseline; white-space: normal; widows: 2; width: 360px; word-break: normal; word-spacing: normal; overflow-wrap: normal; z-index: 2147483000; text-align: start; -webkit-font-smoothing: antialiased;"></iframe>
 
 <iframe allowfullscreen="" class="intercom-launcher-frame intercom-ns5xfy e1ur5zlj0" name="intercom-launcher-frame" title="Intercom live chat" data-intercom-frame="true" role="modal" data-gtm-yt-inspected-1_19="true" data-gtm-yt-inspected-7887523_1043="true" data-gtm-yt-inspected-7887523_1046="true" style="box-sizing: content-box; font-family: intercom-font, &quot;Helvetica Neue&quot;, &quot;Apple Color Emoji&quot;, Helvetica, Arial, sans-serif; font-size: 10px; font-style: normal; letter-spacing: normal; font-stretch: normal; font-variant: normal; font-weight: 400; text-align-last: initial; text-decoration: none; text-indent: 0px; text-shadow: none; text-transform: none; alignment-baseline: baseline; animation-play-state: running; backface-visibility: visible; background: rgb(103, 61, 230); baseline-shift: baseline; border: 0px none transparent; border-radius: 50%; inset: auto 20px 20px auto; -webkit-box-decoration-break: slice; box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 6px 0px, rgba(0, 0, 0, 0.16) 0px 2px 32px 0px; caption-side: top; clear: none; clip: auto; color: rgb(47, 28, 106); columns: auto auto; column-fill: balance; column-gap: normal; content: normal; counter-increment: none; counter-reset: none; cursor: auto; direction: ltr; display: inline; dominant-baseline: auto; empty-cells: show; float: none; height: 60px; -webkit-hyphenate-character: auto; hyphens: manual; image-rendering: auto; line-height: inherit; list-style: outside none disc; margin: 0px; max-height: none; max-width: none; min-height: 0px; min-width: 0px; opacity: 1; orphans: 2; outline-offset: 0px; overflow: visible; padding: 0px; page: auto; break-after: auto; break-before: auto; break-inside: auto; perspective: none; perspective-origin: 50% 50%; pointer-events: auto; position: fixed; quotes: none; resize: none; size: auto; table-layout: auto; transform: none; transform-origin: 50% 50% 0px; transform-style: flat; unicode-bidi: normal; vertical-align: baseline; white-space: normal; widows: 2; width: 60px; word-break: normal; word-spacing: 0px; overflow-wrap: normal; z-index: 2147483000; text-align: start; -webkit-font-smoothing: antialiased; -webkit-text-stroke-width: 0px;"></iframe>
+
+
+---
+
+#### * DIO - Digital Inovation One *
+######  [Inscreva-se na Dio](https://web.dio.me/sign-up?ref=R5J3ZLTIFS)  
+
+######  [Vagner Bellacosa perfil na Dio](https://web.dio.me/users/vagnerbellacosa?tab=achievements)  
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/VagnerBellacosa/Curso_HTML5_CSS3.svg?style=for-the-badge
+[contributors-url]: https://github.com/VagnerBellacosa/Curso_HTML5_CSS3/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/VagnerBellacosa/Curso_HTML5_CSS3.svg?style=for-the-badge
+[forks-url]: https://github.com/VagnerBellacosa/Curso_HTML5_CSS3/network/members
+[stars-shield]: https://img.shields.io/github/stars/VagnerBellacosa/Curso_HTML5_CSS3.svg?style=for-the-badge
+[stars-url]: https://github.com/VagnerBellacosa/Curso_HTML5_CSS3/stargazers
+[issues-shield]: https://img.shields.io/github/issues/VagnerBellacosa/Curso_HTML5_CSS3.svg?style=for-the-badge
+[issues-url]: https://github.com/VagnerBellacosa/Curso_HTML5_CSS3/issues
+[license-shield]: https://img.shields.io/github/license/VagnerBellacosa/Curso_HTML5_CSS3.svg?style=for-the-badge
+[license-url]: https://github.com/VagnerBellacosa/Curso_HTML5_CSS3/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/VagnerBellacosa/
+[product-screenshot]: BootCamps/images/capa.png

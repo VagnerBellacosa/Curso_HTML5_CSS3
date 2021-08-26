@@ -26,12 +26,5 @@ $(document).ready(function() {
 
 	$(document).scroll(function() {
 		setTimeout(function() {animeScroll()}, 150);
-//		    animeScroll();
 	});
 });
-
-
-
-
-
-

@@ -1,0 +1,60 @@
+/*
+Utiliza o keyframe svg-animate
+Anima em 4s cada path
+forwards faz com que a animação termine e matenha o estado final dela (ou seja, o objeto totalmen preenchido)
+remova o ininite para a animação acontecer apenas uma vez */
+svg.animate path {
+	animation: svg-animate 4s forwards infinite;
+}
+
+/* Função principal da animação, levar o dashoffset até 0. Nesse caso ele vai do dashoffset que foi definido com jQuery até 0. Por isso o from está vazio. */
+@keyframes svg-animate {
+	from {}
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+.container {
+	width: 240px;
+	margin: 40px auto;
+}
+
+body {
+	background: #0A0A0A;
+}
+
+h1 {
+	text-align: center;
+	font-size: 2em;
+	margin: 40px 0;
+	font-family: monaco;
+	color: #8844ee;
+}
+
+footer {
+	text-align: center;
+	margin: 40px;
+}
+
+#origamid {
+	font-family: monaco;
+	text-decoration: none;
+	color: #8844ee;
+	display: inline-block;
+}
+
+#origamid::after, #origamid::before {
+	content: '';
+	display: block;
+	background: #8844ee;
+	width: 0;
+	height: 2px;
+	border-radius: 4px;
+	margin: 6px auto 6px auto;
+	transition: all .2s ease;
+}
+
+#origamid:hover::after, #origamid:hover::before {
+	width: 100%;
+}

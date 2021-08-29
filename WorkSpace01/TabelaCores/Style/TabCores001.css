@@ -1,0 +1,15 @@
+p{ 
+    color: #ff00ff; 
+}
+
+p.vermelho{
+  color:red;
+} 
+.azul{
+  color:rgb(0,0,255);
+}
+.bgciano{
+  background-color: #00FFFF;
+}
+ 
+ 

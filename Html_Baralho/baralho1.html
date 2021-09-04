@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--************************************************************************-->
+<!--* Playing Cards with CSS Demo                                          *-->
+<!--*                                                                      *-->
+<!--* Copyright 2001 by Mike Hall                                          *-->
+<!--* Please see https://www.brainjar.com for terms of use.                 *-->
+<!--************************************************************************-->
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="Vagner Bellacosa">
+  <meta name="Keywords" content="Exemplo mambeme de baralho com html css js">
+  <meta name="Description" content="Um codigo simples para mostrar as cartas de baralho">
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+	<title>Tutorias CSS - Baralho com CSS</title>
+
+	<link href="./styles/default.css" rel="stylesheet" type="text/css" />
+	<link href="./styles/cardStyles.css" rel="stylesheet" type="text/css" />
+	
+	<script src="./js/card.js"></script>
+
+</head>
+
+<body>
+
+<!-- Normal page content. -->
+
+<div id="demoBox" style="background-color:#ffffff;">
+
+<h1 style="font-size:1.2em ">Baralho com CSS </h1>
+
+<p>Est&aacute; p&aacute;gina demonstra o emprego das t&eacute;cnicas para cria&ccedil;&atilde;o de um   baralho completo usando marca&ccedil;&atilde;o
+ e regras de estilo. </p>
+
+<p>Os links a seguir acionam um  JavaScript que demonstra como aumentar e diminuir o tamanho das cartas alterando a propriedade
+ <code>font-size</code> da classe <code>.card</code>.</p>
+
+<p>
+<a href="" onclick="return resizeCards(-2)">diminuir</a>
+|
+<a href="" onclick="return resizeCards(+2)">aumentar</a>
+</p>
+
+<p>Veja o c&oacute;digo fonte desta p&aacute;gina para  detalhes da marcação e regras de estilo.</p>
+
+</div>
+
+<div style="position:relative;margin-top:1em;">
+
+<div class="card" style="left:0em;top:0em;">
+  <div class="front">
+    <div class="index">10<br />&spades;</div>
+    <div class="spotA1">&spades;</div>
+    <div class="spotA2">&spades;</div>
+    <div class="spotA4">&spades;</div>
+    <div class="spotA5">&spades;</div>
+    <div class="spotB2">&spades;</div>
+
+    <div class="spotB4">&spades;</div>
+    <div class="spotC1">&spades;</div>
+    <div class="spotC2">&spades;</div>
+    <div class="spotC4">&spades;</div>
+    <div class="spotC5">&spades;</div>
+  </div>
+</div>
+
+<div class="card" style="left:4em;top:0em;">
+  <div class="front red">
+
+    <div class="index">9<br />&hearts;</div>
+    <div class="spotA1">&hearts;</div>
+    <div class="spotA2">&hearts;</div>
+    <div class="spotA4">&hearts;</div>
+    <div class="spotA5">&hearts;</div>
+    <div class="spotB3">&hearts;</div>
+    <div class="spotC1">&hearts;</div>
+    <div class="spotC2">&hearts;</div>
+
+    <div class="spotC4">&hearts;</div>
+    <div class="spotC5">&hearts;</div>
+  </div>
+</div>
+
+<div class="card" style="left:8em;top:0em;">
+  <div class="front">
+    <div class="index">8<br />&clubs;</div>
+    <div class="spotA1">&clubs;</div>
+    <div class="spotA3">&clubs;</div>
+
+    <div class="spotA5">&clubs;</div>
+    <div class="spotB2">&clubs;</div>
+    <div class="spotB4">&clubs;</div>
+    <div class="spotC1">&clubs;</div>
+    <div class="spotC3">&clubs;</div>
+    <div class="spotC5">&clubs;</div>
+  </div>
+</div>
+
+<div class="card" style="left:12em;top:0em;">
+
+  <div class="front red">
+    <div class="index">7<br />&diams;</div>
+    <div class="spotA1">&diams;</div>
+    <div class="spotA3">&diams;</div>
+    <div class="spotA5">&diams;</div>
+    <div class="spotB2">&diams;</div>
+    <div class="spotC1">&diams;</div>
+    <div class="spotC3">&diams;</div>
+
+    <div class="spotC5">&diams;</div>
+  </div>
+</div>
+
+<div class="card" style="left:16em;top:0em;">
+  <div class="front">
+    <div class="index">6<br />&spades;</div>
+    <div class="spotA1">&spades;</div>
+    <div class="spotA3">&spades;</div>
+    <div class="spotA5">&spades;</div>
+
+    <div class="spotC1">&spades;</div>
+    <div class="spotC3">&spades;</div>
+    <div class="spotC5">&spades;</div>
+  </div>
+</div>
+
+<div class="card" style="left:20em;top:0em;">
+  <div class="front red">
+    <div class="index">5<br />&hearts;</div>
+    <div class="spotA1">&hearts;</div>
+
+    <div class="spotA5">&hearts;</div>
+    <div class="spotB3">&hearts;</div>
+    <div class="spotC1">&hearts;</div>
+    <div class="spotC5">&hearts;</div>
+  </div>
+</div>
+
+<div class="card" style="left:0em;top:6em;">
+  <div class="front">
+    <div class="index">4<br />&clubs;</div>
+
+    <div class="spotA1">&clubs;</div>
+    <div class="spotA5">&clubs;</div>
+    <div class="spotC1">&clubs;</div>
+    <div class="spotC5">&clubs;</div>
+  </div>
+</div>
+
+<div class="card" style="left:4em;top:6em;">
+  <div class="front red">
+    <div class="index">3<br />&diams;</div>
+
+    <div class="spotB1">&diams;</div>
+    <div class="spotB3">&diams;</div>
+    <div class="spotB5">&diams;</div>
+  </div>
+</div>
+
+<div class="card" style="left:8em;top:6em;">
+  <div class="front">
+    <div class="index">2<br />&spades;</div>
+    <div class="spotB1">&spades;</div>
+
+    <div class="spotB5">&spades;</div>
+  </div>
+</div>
+
+<div class="card" style="left:12em;top:6em;">
+  <div class="front red">
+    <div class="index">A<br />&hearts;</div>
+    <div class="ace">&hearts;</div>
+  </div>
+</div>
+
+<div class="card" style="left:16em;top:6em;">
+  <div class="front">
+    <div class="index">K<br />&clubs;</div>
+    <img class="face" src="./image/king.gif" alt="" width="80" height="130" />
+    <div class="spotA1">&clubs;</div>
+    <div class="spotC5">&clubs;</div>
+  </div>
+</div>
+
+<div class="card" style="left:20em;top:6em;">
+  <div class="front red">
+    <div class="index">Q<br />&diams;</div>
+    <img class="face" src="./image/queen.gif" alt="" width="80" height="130" />
+    <div class="spotA1">&diams;</div>
+    <div class="spotC5">&diams;</div>
+  </div>
+</div>
+
+<div class="card" style="left:0em;top:12em;">
+
+  <div class="front">
+    <div class="index">J<br />&spades;</div>
+    <img class="face" src="./image/jack.gif" alt="" width="80" height="130" />
+    <div class="spotA1">&spades;</div>
+    <div class="spotC5">&spades;</div>
+  </div>
+</div>
+
+<div class="card" style="left:4em;top:12em;"></div>
+
+</div>
+
+<div id="footer">
+<?php include('../inc/footer.inc.php'); ?> 		
+</div> 
+</body>
+</html>

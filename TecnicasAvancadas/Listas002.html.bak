@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Exemplo de Listas </title>
+ </head>
+ <body>
+  
+  <h4>Instruções para fazer pipoca em microondas</h4>
+<ol>
+   <li>Adquira o milho de pipoca apropriado
+   <li>Retire-o da embalagem
+   <li>Introduza-o no forno
+   <li>Ajuste para a potência máxima por 5 minutos
+       e aprete o botão <i>iniciar</i>
+   <li>Aguarde até que todo milho tenha sido tornado
+       em pipoca
+</ol>
+
+ </body>
+</html>

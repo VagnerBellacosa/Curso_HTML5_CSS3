@@ -1,320 +1,233 @@
-# Git
----
 
->Git é um sistema de controle de versão distribuído gratuito e de código aberto projetado para lidar com tudo, desde projetos pequenos a muito grandes com velocidade e eficiência.  
-Git é fácil de aprender e tem um desempenho extremamente rápido. Ele supera as ferramentas SCM como Subversion, CVS, Perforce e ClearCase com recursos como ramificação local barata, áreas de teste convenientes e vários fluxos de trabalho.
 
-Inicialmente projetado e desenvolvido por Linus Torvald em 2005, Git rapidamente se tornou uma das mais populares ferramentas de controle de versão, principalmente em projetos open source.
-Muito do aumento da popularida de Git se deve a plataformas como GitHub a qual vamos ver mais a frente.  
-<br/>
+![Link icon](https://www.hostinger.com.br/tutoriais/wp-content/themes/tutorialsthemeuplift/public/images/social-icons/link.svg) [![Twitter logo](https://www.hostinger.com.br/tutoriais/wp-content/themes/tutorialsthemeuplift/public/images/social-icons/twitter.svg)](https://twitter.com/intent/tweet?text=O Que é HTML? Guia Básico Para Iniciantes&url=www.hostinger.com.br/tutoriais/o-que-e-html-conceitos-basicos) [![Facebook logo](https://www.hostinger.com.br/tutoriais/wp-content/themes/tutorialsthemeuplift/public/images/social-icons/facebook.svg)](https://www.facebook.com/sharer/sharer.php?u=www.hostinger.com.br/tutoriais/o-que-e-html-conceitos-basicos) [![LinkedIn logo](https://www.hostinger.com.br/tutoriais/wp-content/themes/tutorialsthemeuplift/public/images/social-icons/linkedin.svg)](https://www.linkedin.com/sharing/share-offsite/?url=www.hostinger.com.br/tutoriais/o-que-e-html-conceitos-basicos) [![Email icon](https://www.hostinger.com.br/tutoriais/wp-content/themes/tutorialsthemeuplift/public/images/social-icons/mail.svg)](mailto:?subject=O Que é HTML? Guia Básico Para Iniciantes&body=Article: www.hostinger.com.br/tutoriais/o-que-e-html-conceitos-basicos)
 
-## Principais plataformas de hospedagem que utilizam Git  
-<br/>
+[HTML](https://www.hostinger.com.br/tutoriais/html) - nov 26, 2021 -Andrei L. -7min de leitura
 
-![](img/github.png) 
+# O Que é HTML? Guia Básico Para Iniciantes
 
-![](img/gitlab.png) 
+![O Que é HTML? Guia Básico Para Iniciantes](https://www.hostinger.com.br/tutoriais/wp-content/uploads/sites/12/2018/03/o-que-e-html.png)
 
-![](img/bitbucket.png) 
+A Linguagem de Marcação de Hipertexto (HTML) é uma linguagem de computador que compõe a maior parte das páginas da internet e dos aplicativos online. Um hipertexto é um texto usado para fazer referência a outros textos, enquanto uma linguagem de marcação é composta por uma série de marcações que dizem para os servidores da web qual é o estilo e a estrutura de um documento.
 
+O HTML não é considerado uma linguagem de programação, já que ele não pode criar funcionalidades dinâmicas. Ao invés disso, com o HTML, os usuários podem criar e estruturar seções, parágrafos e links usando elementos, tags e atributos.
 
-## GitHub
----  
-<br/>
+Confira abaixo alguns dos usos mais comuns para o HTML:
 
-Iremos adotar a plataforma GitHub para este treinamento, se trata da plataforma mais popular do mundo que utiliza Git.  
-O GitHub é amplamente utilizado por grande parte dos projetos open sources e também por desenvolvedores para divulgação de projetos e portifólio.  
-<br/>
+- **Desenvolvimento web**. Os desenvolvedores usam códigos HTML para projetar como um navegador vai exibir os elementos das páginas, como textos, hiperlinks e arquivos de mídia.
+- **Navegação na internet**. Os usuários podem navegar facilmente e inserir links entre páginas e sites relacionados, já que o HTML é amplamente usado para incorporar hiperlinks.
+- **Documentação**. O HTML torna possível a organização e a formatação de documentos, de maneira similar ao Microsoft Word.
 
+Também vale notar que o HTML agora é considerado um padrão oficial da internet. O **[World Wide Web Consortium (W3C)](https://www.w3.org/)** mantêm e desenvolve especificações do HTML, além de providenciar atualizações regulares.
 
-## Conceitos GIt
----  
-<br/>
+Este artigo vai cobrir o básico sobre HTML, incluindo como ele funciona, seus prós e contras — além de como ele se relaciona com CSS e JavaScript.
 
-### Repositório  
+Conteúdo
 
-Local onde os arquivos e suas cópias ficarão armazenados. O repositório pode ser local ou remoto, podendo salvar qualquer tipo de arquivo.  
-<br/>
+- [O Que É HTML – Vídeo](https://www.hostinger.com.br/tutoriais/o-que-e-html-conceitos-basicos#O-Que-E-HTML-8211-Video)
+- [Como Funciona o HTML](https://www.hostinger.com.br/tutoriais/o-que-e-html-conceitos-basicos#Como-Funciona-o-HTML)
+- [A História do HTML](https://www.hostinger.com.br/tutoriais/o-que-e-html-conceitos-basicos#A-Historia-do-HTML)
+- [Tags e Elementos HTML mais Utilizados](https://www.hostinger.com.br/tutoriais/o-que-e-html-conceitos-basicos#Tags-e-Elementos-HTML-mais-Utilizados)
+- [A Evolução do HTML. Qual a diferença entre HTML e HTML5?](https://www.hostinger.com.br/tutoriais/o-que-e-html-conceitos-basicos#A-Evolucao-do-HTML-Qual-a-diferenca-entre-HTML-e-HTML5)
+- [Prós e Contras do HTML](https://www.hostinger.com.br/tutoriais/o-que-e-html-conceitos-basicos#Pros-e-Contras-do-HTML)
+- [Qual a Relação Entre HTML, CSS e JavaScript?](https://www.hostinger.com.br/tutoriais/o-que-e-html-conceitos-basicos#Qual-a-Relacao-Entre-HTML-CSS-e-JavaScript)
+- [Como Entender o HTML e Melhorar seu Conhecimento](https://www.hostinger.com.br/tutoriais/o-que-e-html-conceitos-basicos#Como-Entender-o-HTML-e-Melhorar-seu-Conhecimento)
+- [Conclusão](https://www.hostinger.com.br/tutoriais/o-que-e-html-conceitos-basicos#Conclusao)
 
-### Branch  
+## O Que É HTML – Vídeo
 
-Um branch é uma cópia de um repositório feito a partir de outra branch. Você pode utilizá-lo para desenvolver o seu projeto individualmente, sem alterar a branch de origem. Assim, só depois de finalizado, será combinado novamente com a branch original.
 
-Essa função é útil, por exemplo, se você tem mais de uma opção para a finalização de um projeto. Você pode testar as opções separadamente e incluir o código definitivo só quando você decidir qual alternativa é a melhor.  
 
-Geralmente, teremos a branch principal que normalmente tem o nome de master ou main (GitHub utilizava por default o master mas passou a adotar o padrão main desde 2020) e as branchs criadas pelos colaboradores.
+## **Como Funciona o HTML**
 
-<br/>
+Um site médio inclui diversas páginas HTML diferentes. Por exemplo, ele pode trazer uma página inicial, uma página “sobre” e uma página de contato. Cada uma delas possui um arquivo HTML separado.
 
-### Pull request  / Merge Request  
+Documentos HTML são arquivos que terminam com uma extensão .html ou .htm. Um navegador lê o arquivo HTML e renderiza o seu conteúdo para que os usuários da internet possam vê-lo.
 
-Um Pull/Merge Request é quando você informa aos outros membros da sua equipe que vai incorporar seu branch ao repositório original. Os colaboradores da equipe podem aceitar ou não a Pull Request.
+Todas as páginas HTML possuem uma série de elementos, que consistem num conjunto de tags e atributos. Os elementos HTML são os tijolos de construção de uma página da internet. Uma tag diz para o navegador onde um elemento começa e termina, enquanto um atributo descreve as características de um elemento.
 
-Ao abrir essa opção é possível discutir e argumentar o seu trabalho com os cocriadores do projeto.  
-<br/>
+As três principais partes de um elemento são:
 
-### Merge
+- **Tag de abertura** – usada para dizer onde um elemento começa a ter efeito. A tag é cercada de colchetes angulares para abertura e fechamento. Por exemplo, use a tag de abertura <p> para criar um parágrafo.
+- **Conteúdo** – essa é a parte que os usuários verão.
+- **Tag de fechamento** – igual à tag de abertura, mas com uma barra antes do nome do elemento. Por exemplo, </p> para encerrar um parágrafo.
 
-Após a finalização de um trabalho em um Branch, é necessário realizar o Merge, fundir a cópia e seus arquivos modificados com a branch principal do projeto. Isso pode ser feito localmente ou no caso de estarmos utilizando uma plataforma como o GitHub isso pode ser feito após análise da solicitação de Merge Request.  
-<br/>  
+A combinação dessas três partes vai criar um elemento HTML.
 
-![](img/branch.png)  
+<p>É assim que você adiciona um parágrafo no HTML.</p>
 
+Outra parte crucial de um elemento HTML é o seu atributo, que possui duas seções — um nome e um valor de atributo. O nome identifica a informação adicional que um usuário deseja acrescentar, enquanto o valor de atributo fornece mais especificações.
 
+Por exemplo, um elemento de estilo que adiciona a cor roxa e uma fonte da família verdana ficará assim:
 
-### Primeiros passos
+<p style="color:purple;font-family:verdana">É assim que você adiciona um parágrafo no HTML.</p>
 
-- Criar uma conta pessoal no GitHub
-- Instalar Git Client
-  - https://git-scm.com/downloads
-- Criar um novo repositório no Github
-- Criar assinatura
-  - ``` 
-  git config --global user.name "Seu usuario"
-  git config --global user.email "email@example.com
-  ```
-- Clonar repositório
-  - ``` 
-  git clone <url_repositorio>
-  ```
+Outro atributo é a classe HTML, que é mais importante para desenvolvimento e programação. Essa classe de atributo adiciona informações de estilo que podem funcionar em elementos diferentes com o mesmo valor de classe.
 
-## Comandos Git
----  
-<br/>
+Por exemplo, vamos usar o mesmo estilo para um cabeçalho <h1> e para um parágrafo <p>. O estilo inclui cor de fundo, borda, margem e preenchimento — tudo dentro da classe .important. Para termos o mesmo estilo no <h1> e no <p>, adicione class=”important” depois de cada tag de abertura:
 
-### Git Help
+<**html**>
 
-```
-git help
-git help <comando> #Comando o qual deseja maiores informações
-```
+<**head**>
 
-O comando help irá lhe mostrar qual a função de determinado comandos e quais opções podem ser utilizadas junto com aquele comando.   
+<style>
 
-#### Git Clone  
-```
-git clone <endereco-repositorio-remoto>
-```
-O Git clone é um comando para baixar o código-fonte existente de um repositório remoto (como o Github, por exemplo). Utilizando GitHub é possível fazer o *git clone* por https ou ssh.
+.important {
 
-#### Git Init
-```
-git init
-```
+  background-color: blue;
 
-Cria um novo repositório local Git. Com esse comando será criado um novo subdiretório chamado .git que contem todos os arquivos necessários de seu repositório — um esqueleto de repositório Git.  
+  color: white;
 
-### Git Remote
+  border: 2px solid black;
 
-```
-git remote add origin <endereco_repositorio>
-```
+  margin: 2px;
 
-Vincula o repositório local a um repositório remoto.
+  padding: 2px;
 
+}
 
-```
-git remote
+</**style**>
 
-git remote -v
-```
+</**head**>
 
-Exibe os repositórios remotos.  
+<**body**>
 
+<**h1** **class**="important">Isto é um cabeçalho</**h1**>
 
-#### Git Status  
-```
-git status
-```
-Fornece todas as informações necessárias sobre o branch atual, como por exemplo ficheiros que sofreram alterações que podem ser incluídos no próximo *commit*.  
+<p class="important">Isto é um parágrafo.</p>
 
-#### Git Add
-```
-git add <ficheiro>
-git add .
-```  
-Adiciona um ficheiro ou todos o ficheiros que sofreram modificações e/ou foram incluídos no  próximo *commit*.
-Este comando não altera o repositório, as alterações não são salvas até fazermos um *commit*. 
+</**body**>
 
-#### Git Restore
-```
-git restore --staged <ficheiro>
-```  
-Remove do próximo *commit* ficheiro que foi incluído no  próximo *commit*.
+</**html**>
 
-```
-git restore <ficheiro>
-```  
-Restaura o ficheiro para a última estado dele na Branch. Cuidado, isso irá remover todas suas alterações que não foram realizadas *commit*.
+A maioria dos elementos possui uma tag de abertura e de fechamento, mas alguns não precisam fechar a tag para funcionar. Esse é o caso dos elementos vazios. Eles não usam uma tag de fechamento pois não têm conteúdo:
 
-#### Git Reset
+<img src="/" alt="Imagem">
 
-```
-git reset HEAD <ficheiro>
-```
+Essa tag de imagem possui dois atributos — um atributo src (que é um caminho de imagem) e um atributo alt (que é o texto de descrição). Contudo, ele não tem conteúdo nem uma tag de fechamento.
 
-Remove do próximo *commit* ficheiro que foi incluído no  próximo *commit*. (igual ao comando git restore --staged
+Finalmente, cada documento HTML deve começar com uma declaração <!DOCTYPE> para informar ao navegador qual é o tipo de documento. Com o HTML5, a declaração doctype HTML pública será:
 
+**<!DOCTYPE html>**
 
-```
-git reset --hard
-```
+## **A História do HTML**
 
-Retorna o repositório para o último commit na branch a qual está posicionado. Cuidado, todas as suas alterações que não sofreram *commit* serão perdidadas.
+O HTML foi inventado por [**Tim Berners-Lee**](https://pt.wikipedia.org/wiki/Tim_Berners-Lee), um físico do centro de pesquisas CERN, na Suíça. Ele surgiu com a ideia de um sistema de hipertexto na internet.
 
-#### Git Commit
+Hipertexto significa um texto que possui referências (links) para outros textos que podem ser acessados imediatamente. Ele publicou a primeira versão do HTML em 1991, consistindo em 18 tags. Desde então, cada versão do HTML vem com novas tags e atributos (modificadores de tags).
 
-```
-git commit -m "Mensagem explicativa da alteração realizada"
-```
-Este comando é como definir um ponto de verificação no processo de desenvolvimento, para o qual você pode voltar mais tarde, se necessário. Quando é feito o *git commit* as alterações são confirmadas apenas no repositório local.  
+Devido a rápida ascensão e popularidade, o HTML é agora considerado um padrão oficial da web.
 
-#### Git Pull
-```
-git push <remote> <nome-do-branch>
-git push origin main
-```
-Este comando é como definir um ponto de verificação no processo de desenvolvimento, para o qual você pode voltar mais tarde, se necessário. Quando é feito o *git commit* as alterações são confirmadas apenas no repositório local.  
+O maior upgrade da linguagem foi o lançamento do **HTML5** em 2014. Diversas novas tags semânticas foram adicionadas que revelam o significado do seu próprio conteúdo, como  ***<article>\***, ***<header>\***, e ***<footer>\***.
 
-#### Git Push
-```
-git pull <remote>
-git pull origin
-git pull
-```
+## **Tags e Elementos HTML mais Utilizados**
 
-Obtém atualizações do repositório remoto, quando usamos o git pull, ele recebe as atualizações do repositório remoto e aplica imediatamente as alterações mais recentes no seu repositório local.  
+Atualmente, existem 142 tags HTML disponíveis, que permitem a [**criação de diversos elementos**](https://www.hostinger.com.br/tutorials/html-cheat-sheet). Mesmo que os navegadores modernos não suportem algumas dessas tags, você ainda vai se beneficiar de aprender sobre os diferentes elementos disponíveis.
 
-#### Git Branch
+Esta seção vai discutir as tags HTML mais usadas e dois elementos principais: os elementos bloco e os elementos em linha (inline).
 
-Com branches, vários desenvolvedores podem trabalhar em paralelo no mesmo projeto simultaneamente.
+### **Elementos Bloco**
 
-Pode-se usar o comando git branch para criar, listar e excluir branches.
+Os elementos bloco ocupam a largura completa de uma página. Eles sempre iniciam uma nova linha no documento. Por exemplo, um elemento cabeçalho estará numa linha diferente de um elemento parágrafo.
 
-Criação nova:
+Toda página HTML usa essas três tags:
 
-```
-git branch <nome-do-branch>
-```
+- A tag <html> é o elemento raiz que define todo o documento HTML.
+- A tag <head> contém metadados sobre o título e a codificação de caracteres da página.
+- A tag <body> inclui todo o conteúdo que aparece na página.
 
-Listar branches:
+<**html**>
 
-```
-git branch
-git branch --list
-```
+ <**head**>
 
-Deletar branches:
+   <!-- META INFORMAÇÕES --> 
 
-```
-git branch -d <nome-do-branch>
-```
+ </**head**>
 
-Replicar branch para o repositório remoto:
+ <**body**>
 
-```
-git push -u <remote> <nome-da-branch>
-```   
+   <!-- CONTEÚDO DA PÁGINA -->
 
-Listar branches que já foram fundidos (merged) com o master  
+ </**body**>
 
-```
-git branch --merged
-```   
+</**html**>
 
-Listar branches que não foram fundidos (merged) com o master  
+Outras tags de bloco populares são:
 
-```
-git branch --merged
-```
+- Tags de Cabeçalho – elas variam entre <h1> e <h6>, onde h1 tem um tamanho maior, que vai diminuindo até chegar no h6.
+- Tags de parágrafo – são abertas usando a tag <p>.
+- Tags de lista – possuem diferentes variações. Use a tag <ol> para uma lista ordenada, e a tag <ul> para uma lista sem ordem definida. Então, envolva cada item da lista com a tag <li>.
 
-#### Git Checkout
+### **Elementos Em Linha**
 
-Este é um dos comandos Git mais usados. Para trabalhar em uma branch, primeiro você precisa mudar para ela.
+Um elemento em linha (ou inline) formatam o conteúdo interno de elementos de bloco. Isso inclui a adição de links ou de linhas com ênfase. Os elementos inline são normalmente usados para formatar texto sem quebrar o fluxo do conteúdo.
 
-Usamos o git checkout principalmente para alternar de um branch para outro. Também podemos usá-lo para verificar arquivos e commits.
+Por exemplo, uma tag <strong> faz o elemento ser renderizado em negrito, enquanto a tag <em> faz ele aparecer em itálico. Os hiperlinks também são elementos em linha que usam uma tag <a> e um atributo href para indicar o destino do link:
 
-```
-git checkout <nome-do-branch>
-```
+<a href="https://example.com/">Click me!</a>
 
-Criar um novo branch e fazer checkout ao mesmo tempo:
+## **A Evolução do HTML. Qual a diferença entre HTML e HTML5?**
 
-```
-git checkout -b <nome-da-branch>
-```
+Desde seu lançamento o HTML tem passado por muitas evoluções. O W3C constantemente publica novas versões e atualizações, enquanto que marcas históricas também recebem nomes dedicados.
 
-#### Git Log
+O HTML4 (comumente referido apenas como “HTML”) foi publicado em 1999, enquanto que a maior e mais recente atualização foi lançada em 2014. Chamada de **HTML5**, a atualização introduziu diversos novos recursos à linguagem.
 
-Exibir histórico do repositório
+Um dos mais aguardados era a incorporação nativa de vídeos e arquivos de áudios. Ao invés de precisar utilizar o Flash Player, agora é possível incorporar vídeos e áudios com as novas tags ***<audio></audio>\*** e ***<video></video>\***. Ele também possui compatibilidade com SVG (vetor gráfico escalável) e MathML para fórmulas científicas e matemáticas.
 
-```
-git log
-```   
+O HTML5 também introduziu algumas melhorias de semântica. As novas tags semânticas informam ao navegador sobre o significado do conteúdo, o que auxilia tanto os leitores quanto os mecanismos de busca.
 
-Exibir histórico com diff das duas últimas alterações.  
+As tags semânticas mais populares são ***<article></article>\***, ***<section></section>\***, ***<aside></aside>\***, ***<header></header>\***, e ***<footer></footer>\***.
 
-```
-git log -p -2
-```
+## **Prós e Contras do HTML**
 
-Exibir resumo do histórico (hash completa, autor, data, comentário e qtde de alterações (+/-))   
-```
-git log --stat
-```   
+Como na maioria das coisas, o HTML possui diversos pontos positivos e negativos.
 
-Exibir informações resumidas em uma linha (hash completa e comentário)  
+**Prós:**
 
-```
-git log --pretty=oneline
-```
+- Uma linguagem amplamente utilizada com diversos recursos e uma comunidade gigante;
+- Roda em todos os navegadores;
+- Fácil aprendizado;
+- Totalmente grátis e de código-aberto;
+- Marcações limpas e consistentes;
+- Os padrões oficiais da internet são mantidos pelo Consórcio World Wide Web (W3C);
+- Integração fácil com linguagens de back-end como [PHP](https://www.hostinger.com.br/tutoriais/php/) e Node.js.
 
-Exibir histórico modificação de um ficheiro  
+**Contras:**
 
-```
-git log --diff-filter=M -- <ficheiro>
-```
+- Geralmente utilizado para páginas estáticas. Para funcionalidade dinâmicas você provavelmente vai precisar usar JavaScript ou outra linguagem de back-end como PHP;
+- Não permite a implementação de lógica. Por isso todas as páginas precisam ser criadas separadamente, mesmo se utilizarem os mesmos elementos, como cabeçalhos e rodapés;
+- Alguns navegadores demoram para adotar novos recursos;
+- O comportamento do navegador é algumas vezes difícil de prever (ex.: navegadores antigos muitas vezes não renderizam novas tags).
 
+## **Qual a Relação Entre HTML, CSS e JavaScript?**
 
-#### Git Tags
+Mesmo que o HTML seja uma linguagem poderosa, não é o suficiente para criar um site profissional e responsivo. Ele pode ser utilizado apenas para adicionar elementos de texto e criação de estruturas de conteúdo.
 
-Tags são utilizadas normalmente para marcar o ponto de uma determina versão da aplicação, desta forma, é possível seguir na mesma branch principal e conseguir voltar para pontos de versão apenas utilizando as tags.
+Porém o HTML funciona muito bem com outras duas linguagens de front-end: [CSS (Cascading Style Sheets)](https://www.hostinger.com.br/tutoriais/o-que-e-css-guia-basico-de-css/), e [JavaScript](https://www.hostinger.com.br/tutoriais/o-que-e-javascript/). Juntos eles proporcionam a implementação de funcionalidades avançadas e uma ótima experiência ao usuário.
 
-Criar uma tag localmente, a tag é criada na branch onde estiver no momento em que executar o comando. 
+- O CSS é responsável pelo estilo como background, cores, layouts, espaçamentos, e animações.
+- O JavaScript permite a adição de funcionalidades dinâmicas como sliders, pop-ups, e galerias de fotos.
 
-```
-git tag v1.1 -m "descricao"
-```
+Imagine o HTML como uma pessoa nua, o CSS como as roupas, e o JavaScript como os movimentos e ações.
 
-  
-Criar a tag que foi criada localmente no repositório remoto.
+## **Como Entender o HTML e Melhorar seu Conhecimento**
 
-```
-git push origin <tag_name>
-```
+[**Aprender sobre HTML**](https://www.hostinger.com.br/tutoriais/html) é um ótimo primeiro passo para quem está interessado em [**desenvolvimento de sites**](https://www.hostinger.com.br/tutoriais/como-ser-um-desenvolvedor-web).
 
-Criar todas as tags locais no repositório remoto.
+Existem diversos [**cursos disponíveis na internet**](https://www.hostinger.com.br/tutoriais/11-sites-aprender-como-programar-de-graca) para você aprender a programar, mas listamos as três melhores bases de dados para tutoriais de HTML:
 
-```
-git push origin --tags
-``` 
+- [**W3Schools**](https://www.w3schools.com/) – possui recursos, exemplos e exercícios gratuitos para ajudar no aprendizado de HTML básico. Também tem um tutorial de HTML que custa US$ 95 e você faz no seu próprio ritmo, ganhando um certificado oficial no final.
+- [**Codecademy**](https://www.codecademy.com/) – oferece cursos introdutórios gratuitos com tutoriais interativos. A Codecademy usa uma tela divida que mostra automaticamente o resultado da sua programação num artigo HTML. Ela possui conteúdo exclusivo disponível por US$ 19,99/mês.
+- [**Coursera**](https://www.coursera.org/) – oferece vários cursos que oferecem explicações aprofundadas com exemplos reais. O preço de assinatura é de US$ 49/mês, e há um período de 7 dias grátis para teste.
 
-#### Git Merge
+## **Conclusão**
 
-O git merge permite fazer um merge entre duas branch.
+O HTML é a principal linguagem de programação encontrada na internet. Cada página HTML tem uma série de elementos que cria a estrutura dos conteúdos de uma página ou de um aplicativo.
 
-```
-git merge <branch_a_realizar_merge>
-```
+O HTML é uma linguagem amigável para iniciantes, que possui bastante suporte e é principalmente usada para páginas estáticas. O HTML funciona melhor quando usado em conjunto com o CSS para aplicar o estilo e com o JavaScript para implementar funcionalidades. Você pode conferir [**como linkar o HTML com CSS**](https://www.hostinger.com.br/tutoriais/como-linkar-css-no-html) no nosso blog.
 
-Para realizar o merge, é necessário estar no branch que deverá receber as alterações. O merge pode acontecer de forma automática ou exigir uma ação manual. O merge automático será feito em arquivos textos que não sofreram alterações nas mesmas linhas, já o merge manual será feito em arquivos textos que sofreram alterações nas mesmas linhas, onde será necessário intervenção e realização de um novo commit após esta intevenção.
+<iframe id="intercom-frame" aria-hidden="true" tabindex="-1" title="Intercom" data-gtm-yt-inspected-1_19="true" data-gtm-yt-inspected-7887523_1043="true" data-gtm-yt-inspected-7887523_1046="true" style="box-sizing: border-box; position: absolute !important; opacity: 0 !important; width: 1px !important; height: 1px !important; top: 0px !important; left: 0px !important; border: none !important; display: block !important; z-index: -1 !important; pointer-events: none;"></iframe>
 
-----
+<iframe allowfullscreen="" class="intercom-borderless-frame intercom-6idf9y eqgwjwo0" name="intercom-borderless-frame" title="Intercom live chat mensagem" data-intercom-frame="true" role="modal" data-gtm-yt-inspected-1_19="true" data-gtm-yt-inspected-7887523_1043="true" data-gtm-yt-inspected-7887523_1046="true" style="box-sizing: content-box; font-family: intercom-font, &quot;Helvetica Neue&quot;, &quot;Apple Color Emoji&quot;, Helvetica, Arial, sans-serif; font-size: 10px; font-style: normal; letter-spacing: normal; font-stretch: normal; font-variant: normal; font-weight: normal; text-align-last: initial; text-decoration: none; text-indent: 0px; text-shadow: none; text-transform: none; alignment-baseline: baseline; animation-play-state: running; backface-visibility: visible; background-color: transparent; background-image: none; baseline-shift: baseline; border: 0px none transparent; border-radius: 0px; inset: auto 10px 90px auto; -webkit-box-decoration-break: slice; box-shadow: none; caption-side: top; clear: none; clip: auto; color: inherit; columns: auto auto; column-fill: balance; column-gap: normal; content: normal; counter-increment: none; counter-reset: none; cursor: auto; direction: ltr; display: inline; dominant-baseline: auto; empty-cells: show; float: none; height: 417.984px; -webkit-hyphenate-character: auto; hyphens: manual; image-rendering: auto; line-height: inherit; list-style: outside none disc; margin: 0px; max-height: calc(100% - 90px); max-width: none; min-height: 0px; min-width: 0px; opacity: 1; orphans: 2; outline-offset: 0px; overflow: visible; padding: 0px; page: auto; break-after: auto; break-before: auto; break-inside: auto; perspective: none; perspective-origin: 50% 50%; pointer-events: auto; position: fixed; quotes: none; resize: none; size: auto; table-layout: auto; transform: none; transform-origin: 50% 50% 0px; transform-style: flat; unicode-bidi: normal; vertical-align: baseline; white-space: normal; widows: 2; width: 360px; word-break: normal; word-spacing: normal; overflow-wrap: normal; z-index: 2147483000; text-align: start; -webkit-font-smoothing: antialiased;"></iframe>
 
-## Referências:
-
- - https://gist.github.com/leocomelli/2545add34e4fec21ec16
- - https://comandosgit.github.io/
- - https://rogerdudler.github.io/git-guide/index.pt_BR.html
- - https://tableless.com.br/tudo-que-voce-queria-saber-sobre-git-e-github-mas-tinha-vergonha-de-perguntar/
-
+<iframe allowfullscreen="" class="intercom-launcher-frame intercom-ns5xfy e1ur5zlj0" name="intercom-launcher-frame" title="Intercom live chat" data-intercom-frame="true" role="modal" data-gtm-yt-inspected-1_19="true" data-gtm-yt-inspected-7887523_1043="true" data-gtm-yt-inspected-7887523_1046="true" style="box-sizing: content-box; font-family: intercom-font, &quot;Helvetica Neue&quot;, &quot;Apple Color Emoji&quot;, Helvetica, Arial, sans-serif; font-size: 10px; font-style: normal; letter-spacing: normal; font-stretch: normal; font-variant: normal; font-weight: 400; text-align-last: initial; text-decoration: none; text-indent: 0px; text-shadow: none; text-transform: none; alignment-baseline: baseline; animation-play-state: running; backface-visibility: visible; background: rgb(103, 61, 230); baseline-shift: baseline; border: 0px none transparent; border-radius: 50%; inset: auto 20px 20px auto; -webkit-box-decoration-break: slice; box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 6px 0px, rgba(0, 0, 0, 0.16) 0px 2px 32px 0px; caption-side: top; clear: none; clip: auto; color: rgb(47, 28, 106); columns: auto auto; column-fill: balance; column-gap: normal; content: normal; counter-increment: none; counter-reset: none; cursor: auto; direction: ltr; display: inline; dominant-baseline: auto; empty-cells: show; float: none; height: 60px; -webkit-hyphenate-character: auto; hyphens: manual; image-rendering: auto; line-height: inherit; list-style: outside none disc; margin: 0px; max-height: none; max-width: none; min-height: 0px; min-width: 0px; opacity: 1; orphans: 2; outline-offset: 0px; overflow: visible; padding: 0px; page: auto; break-after: auto; break-before: auto; break-inside: auto; perspective: none; perspective-origin: 50% 50%; pointer-events: auto; position: fixed; quotes: none; resize: none; size: auto; table-layout: auto; transform: none; transform-origin: 50% 50% 0px; transform-style: flat; unicode-bidi: normal; vertical-align: baseline; white-space: normal; widows: 2; width: 60px; word-break: normal; word-spacing: 0px; overflow-wrap: normal; z-index: 2147483000; text-align: start; -webkit-font-smoothing: antialiased; -webkit-text-stroke-width: 0px;"></iframe>

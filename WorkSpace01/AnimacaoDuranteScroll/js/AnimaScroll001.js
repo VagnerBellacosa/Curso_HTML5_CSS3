@@ -1,4 +1,4 @@
- var root = document.documentElement;
+var root = document.documentElement;
 root.className += ' js';
 
 function boxTop(idBox) {
@@ -26,5 +26,12 @@ $(document).ready(function() {
 
 	$(document).scroll(function() {
 		setTimeout(function() {animeScroll()}, 150);
+//		    animeScroll();
 	});
 });
+
+
+
+
+
+

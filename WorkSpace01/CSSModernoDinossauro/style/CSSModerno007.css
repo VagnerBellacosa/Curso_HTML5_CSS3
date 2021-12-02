@@ -1,0 +1,19 @@
+@dark-color: #4a4a4a;    
+@light-color: #f9f9f9;    
+@side-color: #eee;
+
+body {    
+  color: @dark-color;    
+}    
+      
+header, footer {    
+  background-color: @dark-color;    
+  color: @light-color;    
+}    
+      
+main {    
+  background: @light-color;    
+}
+nav, aside {    
+  background: @side-color;    
+}

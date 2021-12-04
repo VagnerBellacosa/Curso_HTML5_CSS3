@@ -1,0 +1,13 @@
+img {
+-webkit-transform: scale (1.5);
+-moz-transform: scale (1.5);
+-ms-transform: scale (2);
+transform: scale(1.5);
+opacity: 0.7;
+}
+.new{
+margin: 60px;
+width:105px;
+height:120px;
+background: url("../Image/sas-img.png") no-repeat;
+}

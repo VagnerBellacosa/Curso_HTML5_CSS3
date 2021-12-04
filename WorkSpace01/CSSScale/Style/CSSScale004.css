@@ -1,0 +1,12 @@
+
+div {
+display: inline-block;
+overflow: hidden;
+}
+div img {
+display: block;
+transition: 2s;
+}
+div img:hover {
+transform: scale(1.6);
+}

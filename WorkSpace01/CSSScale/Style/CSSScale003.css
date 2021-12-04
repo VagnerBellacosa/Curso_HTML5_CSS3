@@ -1,0 +1,7 @@
+.scalehov {
+width: 100px;
+transition: all .4s ease-in-out;
+}
+.scalehov:hover {
+transform: scale(1.5);
+}

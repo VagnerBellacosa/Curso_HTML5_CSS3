@@ -1,0 +1,22 @@
+.module{
+font-family: Arial, Helvetica, sans-serif;
+width: 90%;
+height: 90%;
+display: inline-flex;
+justify-content: right;
+align-items: center;
+perspective: 30px;
+}
+.object {
+width: 5em;
+height: 5em;
+padding: 2em;
+margin: 1.5em;
+text-align: center;
+background-color: #FFF000;
+border-top: 0.4em solid greenyellow;
+box-shadow: 2px 2px 5px 0px royalblue;
+}
+.object {
+transform: scale(-0.66, -0.6);
+}

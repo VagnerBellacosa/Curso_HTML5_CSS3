@@ -1,0 +1,16 @@
+div.box {
+width:150px;
+height:90px;
+background-color:#FFA07A;
+margin-left:150px;
+margin-top:150px;
+position:relative;
+}
+
+div.boxenlarge {
+transform: scale(1, 4);
+-moz-transform: scale(1, 4);
+-ms-transform: scale(1, 4);
+-webkit-transform: scale(1, 4);
+-o-transform: scale(1, 4);
+}

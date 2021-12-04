@@ -1,0 +1,6 @@
+
+section {
+ columns: 3;
+ column-gap: 40px;
+ column-rule: 2px solid gray;
+}

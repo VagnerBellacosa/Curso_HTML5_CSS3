@@ -1,0 +1,70 @@
+
+.triangle-up {
+ width: 0;
+ height: 0;
+ border-left: 25px solid transparent;
+ border-right: 25px solid transparent;
+ border-bottom: 50px solid rgb(246, 156, 85);
+}
+
+.triangle-down {
+ width: 0;
+ height: 0;
+ border-left: 25px solid transparent;
+ border-right: 25px solid transparent;
+ border-top: 50px solid rgb(246, 156, 85);
+}
+
+.triangle-right {
+ width: 0;
+ height: 0;
+ border-top: 25px solid transparent;
+ border-bottom: 25px solid transparent;
+ border-left: 50px solid rgb(246, 156, 85);
+}
+
+.triangle-left {
+ width: 0;
+ height: 0;
+ border-top: 25px solid transparent;
+ border-bottom: 25px solid transparent;
+ border-right: 50px solid rgb(246, 156, 85);
+}
+
+
+.triangle-up-right {
+ width: 0;
+ height: 0;
+ border-top: 50px solid rgb(246, 156, 85);
+ border-left: 50px solid transparent;
+}
+
+.triangle-up-left {
+ width: 0;
+ height: 0;
+ border-top: 50px solid rgb(246, 156, 85);
+ border-right: 50px solid transparent;
+}
+
+.triangle-down-right {
+ width: 0;
+ height: 0;
+ border-bottom: 50px solid rgb(246, 156, 85);
+ border-left: 50px solid transparent;
+}
+
+
+.triangle-down-left {
+ width: 0;
+ height: 0;
+ border-bottom: 50px solid rgb(246, 156, 85);
+ border-right: 50px solid transparent;
+}
+
+
+
+
+
+
+
+

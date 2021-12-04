@@ -1,0 +1,8 @@
+.box_shadow {
+  width: 100px;
+  height: 100px;
+  margin: 100px;
+  -webkit-box-shadow: -52px -52px 0px 0px #f65314, 52px -52px 0px 0px #7cbb00, -52px 52px 0px 0px #00a1f1, 52px 52px 0px 0px #ffbb00;
+     -moz-box-shadow: -52px -52px 0px 0px #f65314, 52px -52px 0px 0px #7cbb00, -52px 52px 0px 0px #00a1f1, 52px 52px 0px 0px #ffbb00;
+          box-shadow: -52px -52px 0px 0px #f65314, 52px -52px 0px 0px #7cbb00, -52px 52px 0px 0px #00a1f1, 52px 52px 0px 0px #ffbb00;
+}

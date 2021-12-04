@@ -1,0 +1,10 @@
+div { /* check remarks before usage */
+ height: 200px;
+ width: 400px;
+ background-image: url(http://lorempixel.com/400/200/nature/4);
+ mask-image: linear-gradient(to top right, transparent 49.5%, white 50.5%), linear-gradient(to top
+left, transparent 49.5%, white 50.5%), linear-gradient(white, white);
+ mask-size: 75% 25%, 25% 25%, 100% 75%;
+ mask-position: bottom left, bottom right, top left;
+ mask-repeat: no-repeat;
+}

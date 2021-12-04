@@ -1,0 +1,7 @@
+#myContainer {
+ color: red;
+ padding: 5px;
+}
+#myContainer p {
+ padding: inherit;
+}

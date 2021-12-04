@@ -1,0 +1,15 @@
+icon {
+ background: url(“icons-sprite.png”);
+ display: inline-block;
+ height: 20px;
+ width: 20px;
+}
+.icon1 {
+ background-position: 0px 0px;
+}
+.icon2 {
+ background-position: -20px 0px;
+}
+.icon3 {
+ background-position: -40px 0px;
+}

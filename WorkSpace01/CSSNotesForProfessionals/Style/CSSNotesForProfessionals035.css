@@ -1,0 +1,49 @@
+
+.burst-8 {
+ background: rgb(246, 156, 85);
+ width: 40px;
+ height: 40px;
+ position: relative;
+ text-align: center;
+ -ms-transform: rotate(20deg);
+ transform: rotate(20eg);
+}
+
+.burst-8::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 40px;
+ width: 40px;
+ background: rgb(246, 156, 85);
+ -ms-transform: rotate(135deg);
+ transform: rotate(135deg);
+}
+
+
+.burst-12 {
+ width: 40px;
+ height: 40px;
+ position: relative;
+ text-align: center;
+ background: rgb(246, 156, 85);
+}
+
+.burst-12::before, .burst-12::after {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 40px;
+ width: 40px;
+ background: rgb(246, 156, 85);
+}
+.burst-12::before {
+ -ms-transform: rotate(30deg);
+ transform: rotate(30deg);
+}
+.burst-12::after {
+ -ms-transform: rotate(60deg);
+ transform: rotate(60deg);
+}

@@ -1,0 +1,6 @@
+div {
+ height: 200px;
+ width: 200px;
+ background: url(http://lorempixel.com/200/200/nature/1);
+ mask-image: linear-gradient(to right, white, transparent);
+}

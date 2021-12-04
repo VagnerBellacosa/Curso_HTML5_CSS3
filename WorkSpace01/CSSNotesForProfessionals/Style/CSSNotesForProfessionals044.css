@@ -1,0 +1,20 @@
+.box_shadow {
+  background-color: #1C90F3;
+  width: 200px;
+  height: 100px;
+  margin: 50px;
+}
+
+.box_shadow:after {
+  content: "";
+  width: 190px;
+  height: 1px;
+  margin-top: 98px;
+  margin-left: 5px;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0px 0px 8px 2px #444444;
+     -moz-box-shadow: 0px 0px 8px 2px #444444;
+          box-shadow: 0px 0px 8px 2px #444444;
+}

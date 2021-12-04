@@ -1,0 +1,14 @@
+.container {
+ height: 500px;
+ width: 500px;
+ display: flex; // Use Flexbox
+ align-items: center; // This centers children vertically in the parent.
+ justify-content: center; // This centers children horizontally.
+ background: white;
+}
+
+.child {
+ width: 100px; 
+ height: 100px;
+ background: blue;
+}

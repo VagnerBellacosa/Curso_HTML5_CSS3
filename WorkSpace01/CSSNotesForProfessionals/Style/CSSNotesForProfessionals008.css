@@ -1,0 +1,14 @@
+.wrapper {
+ height: 600px;
+ text-align: center;
+}
+.outer {
+ display: table;
+ height: 100%;
+ width: 100%;
+}
+.outer .inner {
+ display: table-cell;
+ text-align: center;
+ vertical-align: middle;
+}

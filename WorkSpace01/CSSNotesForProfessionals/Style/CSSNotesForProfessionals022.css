@@ -1,0 +1,6 @@
+div{
+ width: 200px;
+ height: 200px;
+ background: teal;
+ clip-path: circle(30% at 50% 50%); /* refer remarks before usage **/
+}

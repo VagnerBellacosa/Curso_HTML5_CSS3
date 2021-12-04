@@ -1,0 +1,7 @@
+div {
+ width: 200px;
+ height: 200px;
+ background: url(http://lorempixel.com/200/200/abstract/6);
+ mask-image: radial-gradient(circle farthest-side at center, transparent 49%, white 50%); /* check
+remarks before using */
+}

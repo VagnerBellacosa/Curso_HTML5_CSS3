@@ -1,0 +1,22 @@
+pyramid {
+ width: 100px;
+ height: 200px;
+ position: relative;
+ margin: 50px;
+}
+.pyramid::before,.pyramid::after {
+ content: '';
+ display: inline-block;
+ width: 0;
+ height: 0;
+ border: 50px solid;
+ position: absolute;
+}
+.pyramid::before {
+ border-color: transparent transparent #ff5656 transparent;
+ transform: scaleY(2) skewY(-40deg) rotate(45deg);
+}
+.pyramid::after {
+ border-color: transparent transparent #d64444 transparent
+ transform: scaleY(2) skewY(40deg) rotate(-45deg);
+ }

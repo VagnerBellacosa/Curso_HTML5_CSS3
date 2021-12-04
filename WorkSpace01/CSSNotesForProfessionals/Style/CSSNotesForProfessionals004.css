@@ -1,0 +1,15 @@
+
+#box {
+  left: 0;
+  top: 0;
+  transition: left 0.5s, top 0.5s;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: gray;
+}
+
+#box.active {
+  left: 100px;
+  top: 100px;
+}

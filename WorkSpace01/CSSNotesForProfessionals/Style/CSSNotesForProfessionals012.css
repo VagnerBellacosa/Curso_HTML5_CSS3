@@ -1,0 +1,5 @@
+.container{
+ height: 50px; /* set height */
+ line-height: 50px; /* set line-height equal to the height */
+ vertical-align: middle; /* works without this rule, but it is good having it explicitly set */
+}

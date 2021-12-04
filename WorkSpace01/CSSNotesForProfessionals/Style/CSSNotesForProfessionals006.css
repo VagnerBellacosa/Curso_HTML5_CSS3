@@ -1,0 +1,6 @@
+.form { } // Block
+.form--theme-xmas { } // Block + modifier
+.form--simple { } // Block + modifier
+.form__input { } // Block > element
+.form__submit { } // Block > element
+.form__submit--disabled { } // Block > element + modifier

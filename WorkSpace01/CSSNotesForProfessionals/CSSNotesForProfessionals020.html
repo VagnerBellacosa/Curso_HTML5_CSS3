@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content=""> 
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>CSS Notes For Professionals 020</title>
+
+    <style>    </style>
+
+	  <link rel="stylesheet" href="style/normalize.css" type="text/css">	
+	  <link rel="stylesheet" href="style/CSSNotesForProfessionals020.css" type="text/css">
+	  <link rel="stylesheet" href="style/override.css" type="text/css">
+	  
+  </head>
+  <body>
+        
+	<h1>The stacking context</h1>
+    
+	<h2>Diversao garantida</h2>
+	
+<div id="div1">
+  <h1>Division Element #1</h1>
+  <code>position: relative;<br/>
+  z-index: 5;</code>
+</div>
+
+<div id="div2">
+  <h1>Division Element #2</h1>
+  <code>position: relative;<br/>
+  z-index: 2;</code>
+</div>
+
+<div id="div3">
+  <div id="div4">
+    <h1>Division Element #4</h1>
+    <code>position: relative;<br/>
+    z-index: 6;</code>
+  </div>
+
+  <h1>Division Element #3</h1>
+  <code>position: absolute;<br/>
+  z-index: 4;</code>
+
+  <div id="div5">
+    <h1>Division Element #5</h1>
+    <code>position: relative;<br/>
+    z-index: 1;</code>
+  </div>
+
+  <div id="div6">
+    <h1>Division Element #6</h1>
+    <code>position: absolute;<br/>
+    z-index: 3;</code>
+  </div>
+</div>
+			
+	   <script src="js/CSSNotesForProfessionals020.js"></script>
+   
+  </body>
+</html>

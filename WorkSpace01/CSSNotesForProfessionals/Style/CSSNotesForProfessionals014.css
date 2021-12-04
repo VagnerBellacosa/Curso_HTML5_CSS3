@@ -1,0 +1,16 @@
+.wrapper{
+ min-height: 600px;
+}
+
+.wrapper:before{
+ content: "";
+ display: inline-block;
+ height: 100%;
+ vertical-align: middle;
+}
+
+.content {
+ display: inline-block;
+ height: 80px;
+ vertical-align: middle;
+}
